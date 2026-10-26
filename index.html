@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="단국대학교 EVE LAB 김두일 교수 연구실: 고도정수처리, 오존·고도산화공정, 상수관망 및 수처리 운영 최적화 연구." name="description"/>
+<meta content="단국대학교 EVE LAB. 김두일 교수 환경공학 연구실의 연구분야, 교수 소개, 연구실 구성원 및 주요 연구실적을 소개합니다." name="description"/>
 <meta content="#071d29" name="theme-color"/>
-<title>EVE LAB | 단국대학교 김두일 교수 연구실</title>
+<title>EVE LAB | 단국대학교 김두일 교수 환경공학 연구실</title>
 <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -51,6 +51,37 @@ body{font-family:var(--font-ko);word-break:keep-all;overflow-wrap:break-word;let
 @media(max-width:980px){.hero h1{font-size:clamp(37px,4.8vw,50px)}.nav{gap:15px}}
 @media(max-width:760px){.hero h1{font-size:clamp(35px,7.4vw,52px)}.nav a{font-size:16px}}
 @media(max-width:440px){.hero h1{font-size:clamp(32px,8.5vw,41px)}.hero-buttons{flex-wrap:wrap;gap:16px}}
+
+
+/* Faculty photo + maintainable member portraits */
+.prof-avatar{position:relative;background:linear-gradient(135deg,#285360,#316e75);border:1px solid #ffffff26}
+.prof-avatar::after{pointer-events:none;z-index:2}
+.prof-avatar img{width:100%;height:100%;position:absolute;inset:0;z-index:1;object-fit:cover;object-position:center 18%;display:block}
+.prof-avatar span{font-size:44px}
+.prof-bio p{font-size:13px;line-height:1.93;margin:11px 0;color:#607b83}
+.prof-bio a.official-link{margin-top:18px}
+.official-field-strip{background:#e7f3f2;border-left:3px solid #20a99f;padding:15px 20px;margin-top:27px;border-radius:2px}
+.official-field-strip strong{font-size:12px;color:#0b6965}
+.official-field-strip p{font-size:12px;color:#4f7477;margin:7px 0 0;line-height:1.8}
+.members{background:#fff}
+.members-heading{display:flex;justify-content:space-between;align-items:center;gap:30px;margin-bottom:29px}
+.members-heading .section-lead{max-width:690px}
+.member-update-label{font-size:11px;color:#137e78;border:1px solid #cde9e5;background:#f1faf9;border-radius:99px;padding:9px 12px;white-space:nowrap}
+.member-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.member-card{border:1px solid #dbe9e8;border-radius:6px;overflow:hidden;background:#fff;box-shadow:0 8px 24px rgba(5,41,49,.04)}
+.member-photo-area{height:280px;background:linear-gradient(145deg,#e1f0ef 0%,#c3dedc 100%);position:relative;overflow:hidden}
+.member-photo-area:before{content:'';position:absolute;width:250px;height:250px;border:1px solid #b1d5d0;border-radius:50%;top:-130px;right:-110px}
+.member-photo-fallback{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:17px;color:#6d9da1}
+.member-photo-fallback small{font-size:11px;letter-spacing:.02em;color:#6d8e92}
+.member-photo-area img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%}
+.member-info{padding:24px 24px 27px}
+.member-info span{font-size:10px;color:#139e93;letter-spacing:.08em;font-weight:800}
+.member-info h3{font-size:19px;margin:10px 0;font-weight:750;color:#163b43}
+.member-info p{font-size:12px;color:#768f95;line-height:1.7;margin:0}
+.members-note{font-size:11px;color:#879da2;line-height:1.8;margin-top:19px}
+@media(max-width:980px){.member-photo-area{height:220px}}
+@media(max-width:760px){.member-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.member-photo-area{height:190px}.member-info{padding:17px}.members-heading{display:block}.member-update-label{display:inline-block;margin-top:14px}}
+@media(max-width:440px){.member-grid{grid-template-columns:1fr 1fr}.member-photo-area{height:168px}.member-info h3{font-size:15px}.member-info span{font-size:9px}.member-info p{font-size:11px}}
 </style>
 <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" rel="stylesheet"/></head>
 <body>
@@ -60,7 +91,7 @@ body{font-family:var(--font-ko);word-break:keep-all;overflow-wrap:break-word;let
 <span class="brand-mark"><svg aria-hidden="true" fill="none" viewbox="0 0 40 40"><path d="M7 25C13 17 17 27 23 19C28 13 30 17 34 11" stroke="#85E6D6" stroke-linecap="round" stroke-width="3"></path><path d="M7 32C13 24 17 34 23 26C28 20 30 24 34 18" stroke="#85E6D6" stroke-linecap="round" stroke-width="3"></path></svg></span>
 <span><span class="brand-label">EVE LAB</span><span class="brand-caption">DANKOOK UNIVERSITY</span></span>
 </a>
-<nav aria-label="주요 메뉴" class="nav" id="site-nav"><a href="#about">연구실 소개</a><a href="#research">연구분야</a><a href="#people">교수 소개</a><a href="#publications">연구실적</a><a href="#contact">연락처</a></nav>
+<nav aria-label="주요 메뉴" class="nav" id="site-nav"><a href="#about">연구실 소개</a><a href="#research">연구분야</a><a href="#people">지도교수</a><a href="#members">구성원</a><a href="#publications">연구실적</a><a href="#contact">연락처</a></nav>
 <a class="header-contact" href="#contact">문의하기 <span aria-hidden="true">↗</span></a>
 <button aria-controls="site-nav" aria-expanded="false" aria-label="메뉴 열기" class="menu-toggle"><svg fill="none" height="26" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="26"><path d="M3 7h18M3 12h18M3 17h18"></path></svg></button>
 </div>
@@ -116,14 +147,14 @@ body{font-family:var(--font-ko);word-break:keep-all;overflow-wrap:break-word;let
 </section>
 <section class="section research" id="research">
 <div class="container">
-<div class="section-heading-row"><div><div class="section-meta">연구분야</div><h2 class="section-title">주요 연구분야</h2></div><p class="section-lead">단국대학교 공식 교원정보를 바탕으로 정리한 주요 연구분야입니다.</p></div>
+<div class="section-heading-row"><div><div class="section-meta">연구분야</div><h2 class="section-title">주요 연구분야</h2></div><p class="section-lead">단국대학교 교원정보의 한글 교수소개 및 연구분야 자료를 기반으로 구성했습니다.</p></div>
 <div class="research-grid research-grid-four">
-<article class="research-card"><div class="card-num">연구분야 / 01</div><div class="research-icon"><svg aria-hidden="true" fill="none" viewbox="0 0 100 100"><path d="M9 57c15-14 26 14 41 0s26 14 41 0M9 73c15-14 26 14 41 0s26 14 41 0" stroke="#25B3A9" stroke-linecap="round" stroke-width="5"></path><path d="M30 20h40v23H30z" fill="#D7F4EF" stroke="#178C8E" stroke-width="2"></path><path d="M39 29h22M39 36h22" stroke="#178C8E" stroke-width="2"></path></svg></div><h3>고도정수처리 및 담수화</h3><p>막분리 공정, 해수담수화, 하수 재이용 및 고도정수처리 기술을 연구합니다.</p></article>
-<article class="research-card"><div class="card-num">연구분야 / 02</div><div class="research-icon"><svg aria-hidden="true" fill="none" viewbox="0 0 100 100"><circle cx="50" cy="50" r="28" stroke="#1B9395" stroke-width="3"></circle><circle cx="50" cy="50" fill="#C5EDE7" r="14" stroke="#1B9395" stroke-width="3"></circle><path d="M50 9v17M50 74v17M9 50h17M74 50h17" stroke="#2DB6AC" stroke-linecap="round" stroke-width="4"></path><circle cx="50" cy="50" fill="#178F95" r="4"></circle></svg></div><h3>오존·고도산화 및 소독</h3><p>오존, 자외선 및 고도산화공정을 활용한 병원성 미생물 불활성화와 미량오염물질 제거를 연구합니다.</p></article>
-<article class="research-card"><div class="card-num">연구분야 / 03</div><div class="research-icon"><svg aria-hidden="true" fill="none" viewbox="0 0 100 100"><path d="M16 28h30v18h36v27H27V46" stroke="#178F95" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path><circle cx="16" cy="28" fill="#A6E4DF" r="7" stroke="#178F95" stroke-width="2"></circle><circle cx="46" cy="46" fill="#A6E4DF" r="7" stroke="#178F95" stroke-width="2"></circle><circle cx="82" cy="73" fill="#A6E4DF" r="7" stroke="#178F95" stroke-width="2"></circle><circle cx="27" cy="73" fill="#A6E4DF" r="7" stroke="#178F95" stroke-width="2"></circle></svg></div><h3>상수관망 관리</h3><p>상수관망 운영 최적화, 관로 교체 우선순위, 위험도 분석 및 자산관리를 연구합니다.</p></article>
-<article class="research-card"><div class="card-num">연구분야 / 04</div><div class="research-icon"><svg aria-hidden="true" fill="none" viewbox="0 0 100 100"><path d="M18 78V19M18 78h68" stroke="#218B92" stroke-width="2.5"></path><path d="m25 63 17-21 16 13 23-32" stroke="#17A49B" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path><circle cx="42" cy="42" fill="#B7EAE3" r="5" stroke="#179F9B" stroke-width="2"></circle><circle cx="58" cy="55" fill="#B7EAE3" r="5" stroke="#179F9B" stroke-width="2"></circle><circle cx="81" cy="23" fill="#B7EAE3" r="5" stroke="#179F9B" stroke-width="2"></circle></svg></div><h3>수처리 공정 최적화</h3><p>정수장·하수처리장 운영 최적화, 수질 모니터링 및 공정 모델링을 연구합니다.</p></article>
+<article class="research-card"><div class="card-num">연구분야 / 01</div><div class="research-icon"><svg aria-hidden="true" fill="none" viewbox="0 0 100 100"><path d="M9 57c15-14 26 14 41 0s26 14 41 0M9 73c15-14 26 14 41 0s26 14 41 0" stroke="#25B3A9" stroke-linecap="round" stroke-width="5"></path><path d="M30 20h40v23H30z" fill="#D7F4EF" stroke="#178C8E" stroke-width="2"></path><path d="M39 29h22M39 36h22" stroke="#178C8E" stroke-width="2"></path></svg></div><h3>분리막 및 고도수처리</h3><p>분리막을 활용한 해수담수화와 하수재이용, 상수고도처리 기술을 연구합니다.</p></article>
+<article class="research-card"><div class="card-num">연구분야 / 02</div><div class="research-icon"><svg aria-hidden="true" fill="none" viewbox="0 0 100 100"><circle cx="50" cy="50" r="28" stroke="#1B9395" stroke-width="3"></circle><circle cx="50" cy="50" fill="#C5EDE7" r="14" stroke="#1B9395" stroke-width="3"></circle><path d="M50 9v17M50 74v17M9 50h17M74 50h17" stroke="#2DB6AC" stroke-linecap="round" stroke-width="4"></path><circle cx="50" cy="50" fill="#178F95" r="4"></circle></svg></div><h3>오존·AOP 및 UV</h3><p>오존·고도산화공정을 이용한 병원성 미생물 제어와 미량유해물질 제거를 연구합니다.</p></article>
+<article class="research-card"><div class="card-num">연구분야 / 03</div><div class="research-icon"><svg aria-hidden="true" fill="none" viewbox="0 0 100 100"><path d="M16 28h30v18h36v27H27V46" stroke="#178F95" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path><circle cx="16" cy="28" fill="#A6E4DF" r="7" stroke="#178F95" stroke-width="2"></circle><circle cx="46" cy="46" fill="#A6E4DF" r="7" stroke="#178F95" stroke-width="2"></circle><circle cx="82" cy="73" fill="#A6E4DF" r="7" stroke="#178F95" stroke-width="2"></circle><circle cx="27" cy="73" fill="#A6E4DF" r="7" stroke="#178F95" stroke-width="2"></circle></svg></div><h3>상수관망 최적관리</h3><p>상수관망의 운영 효율 개선, 관로 관리, 위험도 분석과 자산관리 기법을 연구합니다.</p></article>
+<article class="research-card"><div class="card-num">연구분야 / 04</div><div class="research-icon"><svg aria-hidden="true" fill="none" viewbox="0 0 100 100"><path d="M18 78V19M18 78h68" stroke="#218B92" stroke-width="2.5"></path><path d="m25 63 17-21 16 13 23-32" stroke="#17A49B" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path><circle cx="42" cy="42" fill="#B7EAE3" r="5" stroke="#179F9B" stroke-width="2"></circle><circle cx="58" cy="55" fill="#B7EAE3" r="5" stroke="#179F9B" stroke-width="2"></circle><circle cx="81" cy="23" fill="#B7EAE3" r="5" stroke="#179F9B" stroke-width="2"></circle></svg></div><h3>상하수도 운영 최적화</h3><p>정수장·하수처리장 공정 모델링과 수처리 시설의 운영 최적화를 연구합니다.</p></article>
 </div>
-<p class="source-note">연구분야 출처: <a href="https://portal.dankook.ac.kr/ctt/dku/profinfo/detailSearch?uld=1AD1F2B7F763834BA87F87C43D5E562E" rel="noopener noreferrer" target="_blank">단국대학교 교원정보 ↗</a></p>
+<div class="official-field-strip"><strong>학교 등록 연구분야</strong><p>오존/AOP 및 UV 연구 · 수처리 시스템 최적화·자동화 · 하수재이용 · 해수담수화 · 상수고도처리</p></div><p class="source-note">연구분야 출처: <a href="https://portal.dankook.ac.kr/ctt/dku/profinfo/detailSearch?uld=1AD1F2B7F763834BA87F87C43D5E562E" rel="noopener noreferrer" target="_blank">단국대학교 교원정보 ↗</a></p>
 </div>
 </section>
 <section class="section" id="people">
@@ -132,24 +163,37 @@ body{font-family:var(--font-ko);word-break:keep-all;overflow-wrap:break-word;let
 <h2 class="section-title">김두일 교수</h2>
 <div class="prof-top">
 <div class="prof-identity">
-<div class="prof-card-head"><div aria-label="교수님 사진 추가 예정(현재 임시 이미지)" class="avatar prof-avatar"><span>DK</span></div><div><div class="person-role">교수 · 김두일</div><div class="person-name">김두일</div><p class="person-desc">단국대학교 공과대학<br/>인프라건설공학과 · 단국대학교</p></div></div>
+<div class="prof-card-head"><div aria-label="김두일 교수 사진(단국대학교 교원정보 제공)" class="avatar prof-avatar"><span>DK</span><img alt="김두일 교수" loading="eager" onerror="this.style.display='none'" referrerpolicy="no-referrer" src="https://webinfo.dankook.ac.kr/comm/syst/file/download.do?fileCdval=201501010000000000000000000&amp;fileSeq=105305"/></div><div><div class="person-role">교수 · 김두일</div><div class="person-name">김두일</div><p class="person-desc">단국대학교 공과대학 인프라건설공학과</p></div></div>
 <div class="prof-quicklinks"><a href="mailto:dikim21@dankook.ac.kr">dikim21@dankook.ac.kr ↗</a><span>+82-31-8005-3610</span><span>제1공학관 216호</span></div><div class="prof-signature"><span>주요 연구분야</span><strong>수처리 · 상수도 시스템 · 운영 최적화</strong></div>
 </div>
-<div class="prof-bio"><span class="prof-eyebrow">교수 소개</span><h3>물환경공학 분야의 연구와 현장 경험을 바탕으로</h3>
-<p>김두일 교수는 서울대학교에서 학사 및 석사학위를, 미국 조지아 공과대학교에서 박사학위를 취득했습니다. 단국대학교 부임 전에는 포스코건설, 한국과학기술연구원(KIST), Samsung Engineering &amp; Construction 등에서 약 10년간 산업 및 연구 현장 경험을 쌓았습니다.</p>
-<p>주요 연구분야는 막분리, 오존 기반 처리·소독, 상수관망 관리, 상하수도 시설 운영 최적화입니다. 오존 접촉조 모델링 및 실험기법에 관한 연구도 수행했습니다.</p>
-<a class="official-link" href="https://portal.dankook.ac.kr/ctt/dku/profinfo/detailSearch?uld=1AD1F2B7F763834BA87F87C43D5E562E" rel="noopener noreferrer" target="_blank">단국대학교 공식 교수정보 보기 <span aria-hidden="true">↗</span></a>
+<div class="prof-bio"><span class="prof-eyebrow">교수 소개</span><h3>현장 경험과 공학적 분석을 연결하는 물환경 연구</h3>
+
+
+<p>김두일 교수는 서울대학교 토목공학과에서 학사·석사학위를 취득하고, 미국 조지아 공과대학교(Georgia Institute of Technology)에서 환경공학 분야 박사학위를 받았습니다.</p><p>단국대학교 부임 전 포스코건설, 한국과학기술연구원(KIST), 삼성건설에서 약 10년간 물산업 및 환경공학 연구·실무를 수행했습니다. 당시 해수담수화와 하수재이용, 고도정수처리, 분리막·자외선 처리, 고도하수처리 분야를 경험했습니다.</p><p>주요 연구 관심사는 분리막 기반 수처리, 오존·고도산화공정(AOP), 상수관망 관리, 상하수도 처리시설의 운영 최적화입니다. 오존접촉조 해석·설계 및 잔류오존·브롬산 생성 등을 예측하는 장치와 모델 개발도 수행했습니다.</p><a class="official-link" href="https://portal.dankook.ac.kr/ctt/dku/profinfo/detailSearch?uld=1AD1F2B7F763834BA87F87C43D5E562E" rel="noopener noreferrer" target="_blank">공식 교수소개 원문 및 연구분야 확인 ↗</a>
 </div>
 </div>
 <div class="prof-details">
-<article class="detail-card"><div class="detail-top"><span>01 / 학력</span><h3>학력</h3></div><div class="timeline"><div><b>2007</b><p><strong>토목환경공학 박사</strong><br/>조지아 공과대학교 (Georgia Tech)</p></div><div><b>1993</b><p><strong>토목공학 석사 (도시공학)</strong><br/>서울대학교</p></div><div><b>1991</b><p><strong>토목공학 학사 (도시공학)</strong><br/>서울대학교</p></div></div></article>
-<article class="detail-card"><div class="detail-top"><span>02 / 경력</span><h3>산업체 및 연구 경력</h3></div><div class="experience-list"><p><strong>POSCO E&amp;C</strong><br/>담수화, 물 재이용 및 고도수처리</p><p><strong>한국과학기술연구원 (KIST)</strong><br/>막분리 담수화 및 자외선 처리 연구</p><p><strong>Samsung Engineering &amp; Construction</strong><br/>고도하수처리 관련 연구 및 실무</p></div></article>
+<article class="detail-card"><div class="detail-top"><span>01 / 학력</span><h3>학력</h3></div><div class="timeline"><div><b>2007</b><p><strong>공학박사 · 건설·환경공학과</strong><br/>조지아 공과대학교 (Georgia Tech)</p></div><div><b>1993</b><p><strong>공학석사 · 토목공학과 도시공학전공</strong><br/>서울대학교</p></div><div><b>1991</b><p><strong>학사 · 토목공학과 도시공학전공</strong><br/>서울대학교</p></div></div></article>
+<article class="detail-card"><div class="detail-top"><span>02 / 경력</span><h3>산업체 및 연구 경력</h3></div><div class="experience-list"><p><strong>포스코건설</strong><br/>담수화, 물 재이용 및 고도수처리</p><p><strong>한국과학기술연구원(KIST)</strong><br/>막분리 담수화 및 자외선 처리 연구</p><p><strong>삼성건설</strong><br/>고도하수처리 관련 연구 및 실무</p></div></article>
 <article class="detail-card"><div class="detail-top"><span>03 / 강의</span><h3>주요 담당 교과목 · 2026</h3></div><ul class="course-list"><li>상하수도시스템 <small>Water and Wastewater Systems</small></li><li>첨단인프라시뮬레이션 <small>Advanced Infrastructure Simulation</small></li><li>환경시스템모형기법Ⅱ <small>Environmental Systems Modeling II</small></li><li>환경공학 <small>Environmental Engineering</small></li></ul><p class="detail-footnote">2026년 강의 기록 중 일부이며, 학기별 개설 여부는 달라질 수 있습니다.</p></article>
 </div>
-<div class="member-banner"><div><strong>연구실 구성원</strong><p class="member-muted">연구원 정보는 확인 후 추가할 예정입니다.</p></div><a class="subtle-action" href="mailto:dikim21@dankook.ac.kr">연구 문의 ↗</a></div>
+
 </div>
 </section>
-<section class="section publications" id="publications">
+<section class="section members" id="members">
+<div class="container">
+<div class="members-heading">
+<div><div class="section-meta">연구실 구성원</div><h2 class="section-title">함께 연구하는 사람들</h2><p class="section-lead">구성원 성명과 사진은 확인 후 등록합니다. 각 카드는 사진, 소속 과정, 연구분야를 표시할 수 있도록 제작했습니다.</p></div>
+<span class="member-update-label">프로필 등록 준비 중</span>
+</div>
+<div class="member-grid">
+<article class="member-card" data-slot="01"><div class="member-photo-area"><div aria-hidden="true" class="member-photo-fallback"><svg fill="none" height="70" viewbox="0 0 90 90" width="70"><circle cx="45" cy="33" r="16" stroke="currentColor" stroke-width="2"></circle><path d="M13 82c2-19 14-30 32-30s30 11 32 30" stroke="currentColor" stroke-width="2"></path></svg><small>사진 등록 예정</small></div><img alt="연구원 1 사진" loading="lazy" onerror="this.style.display='none'" src="images/member-01.jpg"/></div><div class="member-info"><span>연구원 프로필 01</span><h3>이름 등록 예정</h3><p>학위과정 · 연구분야 등록 예정</p></div></article>
+<article class="member-card" data-slot="02"><div class="member-photo-area"><div aria-hidden="true" class="member-photo-fallback"><svg fill="none" height="70" viewbox="0 0 90 90" width="70"><circle cx="45" cy="33" r="16" stroke="currentColor" stroke-width="2"></circle><path d="M13 82c2-19 14-30 32-30s30 11 32 30" stroke="currentColor" stroke-width="2"></path></svg><small>사진 등록 예정</small></div><img alt="연구원 2 사진" loading="lazy" onerror="this.style.display='none'" src="images/member-02.jpg"/></div><div class="member-info"><span>연구원 프로필 02</span><h3>이름 등록 예정</h3><p>학위과정 · 연구분야 등록 예정</p></div></article>
+<article class="member-card" data-slot="03"><div class="member-photo-area"><div aria-hidden="true" class="member-photo-fallback"><svg fill="none" height="70" viewbox="0 0 90 90" width="70"><circle cx="45" cy="33" r="16" stroke="currentColor" stroke-width="2"></circle><path d="M13 82c2-19 14-30 32-30s30 11 32 30" stroke="currentColor" stroke-width="2"></path></svg><small>사진 등록 예정</small></div><img alt="연구원 3 사진" loading="lazy" onerror="this.style.display='none'" src="images/member-03.jpg"/></div><div class="member-info"><span>연구원 프로필 03</span><h3>이름 등록 예정</h3><p>학위과정 · 연구분야 등록 예정</p></div></article>
+</div>
+<p class="members-note">※ 실제 연구실 구성원의 정보를 입력하기 전까지 임시 등록 카드로 표시됩니다. 인원 수에 맞춰 카드를 추가하거나 삭제할 수 있습니다.</p>
+</div>
+</section><section class="section publications" id="publications">
 <div class="container pub-layout">
 <div><div class="section-meta">연구실적</div><h2 class="section-title">주요 연구실적</h2><p class="section-lead">단국대학교 공식 교원정보에 등록된 주요 논문 일부를 소개합니다. 전체 연구실적 목록은 아닙니다.</p><a class="official-link" href="https://portal.dankook.ac.kr/ctt/dku/profinfo/detailSearch?uld=1AD1F2B7F763834BA87F87C43D5E562E" rel="noopener noreferrer" target="_blank">전체 교수 연구실적 확인 ↗</a></div>
 <div class="pub-placeholder">
