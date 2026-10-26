@@ -1,16 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="EVE LAB — Water and environmental engineering research at Dankook University.">
-  <meta name="theme-color" content="#071d29">
-  <title>EVE LAB | Dankook University</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="단국대학교 EVE LAB 김두일 교수 연구실: 고도정수처리, 오존·고도산화공정, 상수관망 및 수처리 운영 최적화 연구." name="description"/>
+<meta content="#071d29" name="theme-color"/>
+<title>EVE LAB | 단국대학교 김두일 교수 연구실</title>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;family=Noto+Sans+KR:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<style>
   :root{--ink:#102d39;--night:#071d29;--light:#f4f8f8;--muted:#637e87;--aqua:#70e4d2;--teal:#109d94;--line:#dce7e8;--max:1192px}
   *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;font-family:'DM Sans','Noto Sans KR',system-ui,sans-serif;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}svg{display:block} .container{width:min(var(--max),calc(100% - 88px));margin-inline:auto}
   .preview-banner{background:#dcf4ef;color:#16564e;text-align:center;font-size:11px;letter-spacing:.015em;padding:8px 12px}.preview-banner strong{font-weight:800}
@@ -33,129 +33,147 @@
   @media(max-width:980px){.prof-top{grid-template-columns:1fr}.prof-details{grid-template-columns:repeat(2,minmax(0,1fr))}.prof-details .detail-card:last-child{grid-column:1/-1}}
   @media(max-width:760px){.research-grid-four{grid-template-columns:1fr}.research-grid-four .research-card{min-height:220px}.prof-details{grid-template-columns:1fr}.prof-details .detail-card:last-child{grid-column:auto}.prof-card-head{grid-template-columns:115px minmax(0,1fr)}.prof-avatar{width:115px;height:145px}.prof-identity,.prof-bio{padding:24px}.prof-bio h3{font-size:21px}}
   @media(max-width:440px){.prof-card-head{grid-template-columns:1fr}.prof-avatar{width:100%;height:150px}.prof-quicklinks{flex-direction:column}}
-  </style>
-</head>
+  
+/* Korean typography: change --font-ko to replace the site-wide typeface. */
+:root{--font-ko:'Pretendard Variable',Pretendard,'Noto Sans KR',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif}
+body{font-family:var(--font-ko);word-break:keep-all;overflow-wrap:break-word;letter-spacing:-.018em}
+.brand-label,.footer strong,.about-kicker,.avatar span{font-family:Manrope,var(--font-ko)}
+.hero h1,.section-title,.prof-bio h3,.person-name,.research-card h3,.detail-top h3,.prof-signature strong{font-family:var(--font-ko);letter-spacing:-.048em}
+.hero h1{font-size:clamp(40px,4.1vw,58px);line-height:1.32;letter-spacing:-.06em}
+.hero-desc{max-width:510px;font-size:15px}
+.section-title{line-height:1.35}
+.nav{gap:25px}.nav a{font-size:13px;letter-spacing:-.025em}
+.research-card h3{font-size:18px;line-height:1.45}
+.section-meta,.art-label,.person-role,.prof-eyebrow{letter-spacing:.03em;text-transform:none}
+.prof-bio h3{line-height:1.5}.contact .section-title{max-width:680px}
+.principle strong{font-size:14px}.principle small{font-size:12px}
+.about-visual:after{content:'RESEARCH  /  INNOVATION'}
+@media(max-width:980px){.hero h1{font-size:clamp(37px,4.8vw,50px)}.nav{gap:15px}}
+@media(max-width:760px){.hero h1{font-size:clamp(35px,7.4vw,52px)}.nav a{font-size:16px}}
+@media(max-width:440px){.hero h1{font-size:clamp(32px,8.5vw,41px)}.hero-buttons{flex-wrap:wrap;gap:16px}}
+</style>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" rel="stylesheet"/></head>
 <body>
-    <header class="site-header">
-    <div class="container header-inner">
-      <a href="#home" class="brand" aria-label="EVE LAB home">
-        <span class="brand-mark"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M7 25C13 17 17 27 23 19C28 13 30 17 34 11" stroke="#85E6D6" stroke-width="3" stroke-linecap="round"/><path d="M7 32C13 24 17 34 23 26C28 20 30 24 34 18" stroke="#85E6D6" stroke-width="3" stroke-linecap="round"/></svg></span>
-        <span><span class="brand-label">EVE LAB</span><span class="brand-caption">DANKOOK UNIVERSITY</span></span>
-      </a>
-      <nav class="nav" id="site-nav" aria-label="Main menu"><a href="#about">About</a><a href="#research">Research</a><a href="#people">Professor</a><a href="#publications">Publications</a><a href="#contact">Contact</a></nav>
-      <a class="header-contact" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
-      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button>
-    </div>
-  </header>
-  <main id="home">
-    <div class="hero">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <div class="eyebrow">Water · Environment · Innovation</div>
-          <h1>Rethinking water.<br><span>Redefining tomorrow.</span></h1>
-          <p class="hero-desc">Exploring advanced water treatment, ozone and oxidation processes, water infrastructure, and efficient water system operation.</p>
-          <div class="hero-buttons"><a href="#research" class="btn-primary">Explore our research <span aria-hidden="true">↗</span></a><a href="#about" class="text-link">Discover EVE LAB <span aria-hidden="true">→</span></a></div>
-        </div>
-        <div class="hero-art" aria-label="Illustration of an interconnected water treatment system">
-          <div class="art-grid"></div>
-          <svg class="hero-graphic" viewBox="0 0 590 510" fill="none" role="img" aria-label="Abstract water engineering illustration">
-            <defs><linearGradient id="ring" x1="150" y1="90" x2="420" y2="450" gradientUnits="userSpaceOnUse"><stop stop-color="#72E6D1"/><stop offset=".52" stop-color="#277F94"/><stop offset="1" stop-color="#113D52"/></linearGradient><linearGradient id="water" x1="180" y1="130" x2="400" y2="400" gradientUnits="userSpaceOnUse"><stop stop-color="#3A9DA5" stop-opacity=".8"/><stop offset="1" stop-color="#0A3347" stop-opacity=".8"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="9"/></filter></defs>
-            <circle cx="300" cy="252" r="183" stroke="#5DD1CC" stroke-opacity=".12" stroke-width="1"/>
-            <circle cx="300" cy="252" r="148" stroke="#63CAC6" stroke-opacity=".19" stroke-width="1" stroke-dasharray="3 10"/>
-            <circle cx="300" cy="252" r="113" stroke="url(#ring)" stroke-width="26" stroke-opacity=".78"/>
-            <circle cx="300" cy="252" r="95" stroke="#85EADD" stroke-width="1" stroke-opacity=".28"/>
-            <circle cx="300" cy="252" r="80" fill="url(#water)" stroke="#7AEADD" stroke-opacity=".6" stroke-width="1.5"/>
-            <path d="M235 269C251 237 278 289 296 253C311 222 332 256 362 228" stroke="#9DF6E7" stroke-width="6" stroke-linecap="round"/>
-            <path d="M241 289C256 270 280 308 298 283C315 261 343 281 358 258" stroke="#67C8CB" stroke-opacity=".7" stroke-width="3" stroke-linecap="round"/>
-            <path d="M116 251h-56v-73h92M443 252h81v91h-70M300 69V30h-90M300 434v48h-100" stroke="#70CFCB" stroke-opacity=".39" stroke-width="2"/>
-            <path d="M118 251h84M393 252h51M300 136V69M300 368v66" stroke="#72E4D4" stroke-opacity=".7" stroke-width="2"/>
-            <circle cx="116" cy="251" r="7" fill="#92F7E7"/><circle cx="443" cy="252" r="7" fill="#92F7E7"/><circle cx="300" cy="69" r="7" fill="#92F7E7"/><circle cx="300" cy="434" r="7" fill="#92F7E7"/>
-            <circle cx="152" cy="178" r="10" fill="#7CE5D8" fill-opacity=".18" stroke="#65D1C6"/><circle cx="454" cy="343" r="10" fill="#7CE5D8" fill-opacity=".18" stroke="#65D1C6"/><circle cx="210" cy="30" r="3" fill="#9CFFF0"/><circle cx="200" cy="482" r="3" fill="#9CFFF0"/>
-            <path d="M100 355L168 314M413 166L490 122" stroke="#8DD4D3" stroke-opacity=".4" stroke-dasharray="5 10"/>
-            <circle cx="76" cy="365" r="24" stroke="#71CCCA" stroke-opacity=".3"/><path d="M66 366l7 7 14-17" stroke="#A5F1E6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="503" cy="116" r="24" stroke="#71CCCA" stroke-opacity=".3"/><path d="M489 122l9-12 9 7 12-17" stroke="#A5F1E6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <div class="art-label top"><small>RESEARCH AREA 01</small>Water treatment & desalination</div>
-          <div class="art-label bottom"><small>RESEARCH AREA 02</small>Water infrastructure & optimization</div>
-        </div>
-        <div class="hero-index">EVE LAB / 2026</div>
-      </div>
-    </div>
-    <div class="principles"><div class="container principles-inner"><div class="principle"><span class="principle-num">01</span><div><strong>Engineering</strong><small>Science-based solutions</small></div></div><div class="principle"><span class="principle-num">02</span><div><strong>Intelligence</strong><small>Data-driven water research</small></div></div><div class="principle"><span class="principle-num">03</span><div><strong>Sustainability</strong><small>Resilient water futures</small></div></div></div></div>
-    <section class="section" id="about">
-      <div class="container about-grid">
-        <div>
-          <div class="section-meta">About EVE LAB</div>
-          <h2 class="section-title">Research for a smarter, safer water future.</h2>
-          <p class="section-lead">EVE LAB is an environmental engineering research laboratory at Dankook University, led by Professor Dooil Kim (김두일).</p>
-          <p class="section-lead">Our research focuses on advanced water and wastewater treatment, ozone/UV-based oxidation, water distribution network management, and the optimization of water treatment operations.</p>
-          <div class="about-list"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg> Applied research · Water treatment · Infrastructure</div>
-        </div>
-        <div class="about-visual" role="img" aria-label="Abstract water treatment visualization">
-          <div class="about-caption">WATER × TECHNOLOGY</div><div class="about-circles"><span></span><span></span><span></span></div><div class="about-kicker">EVE</div>
-        </div>
-      </div>
-    </section>
-    <section class="section research" id="research">
-      <div class="container">
-        <div class="section-heading-row"><div><div class="section-meta">Our Research</div><h2 class="section-title">Research interests</h2></div><p class="section-lead">Core research directions based on Professor Kim's Dankook University faculty profile.</p></div>
-        <div class="research-grid research-grid-four">
-          <article class="research-card"><div class="card-num">FIELD / 01</div><div class="research-icon"><svg viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M9 57c15-14 26 14 41 0s26 14 41 0M9 73c15-14 26 14 41 0s26 14 41 0" stroke="#25B3A9" stroke-width="5" stroke-linecap="round"/><path d="M30 20h40v23H30z" fill="#D7F4EF" stroke="#178C8E" stroke-width="2"/><path d="M39 29h22M39 36h22" stroke="#178C8E" stroke-width="2"/></svg></div><h3>Advanced Water Treatment</h3><p>Membrane treatment, seawater desalination, wastewater reuse, and advanced drinking-water treatment.</p></article>
-          <article class="research-card"><div class="card-num">FIELD / 02</div><div class="research-icon"><svg viewBox="0 0 100 100" fill="none" aria-hidden="true"><circle cx="50" cy="50" r="28" stroke="#1B9395" stroke-width="3"/><circle cx="50" cy="50" r="14" fill="#C5EDE7" stroke="#1B9395" stroke-width="3"/><path d="M50 9v17M50 74v17M9 50h17M74 50h17" stroke="#2DB6AC" stroke-width="4" stroke-linecap="round"/><circle cx="50" cy="50" r="4" fill="#178F95"/></svg></div><h3>Ozone / AOP &amp; Disinfection</h3><p>Ozonation, UV and advanced oxidation for pathogen inactivation and emerging contaminant removal.</p></article>
-          <article class="research-card"><div class="card-num">FIELD / 03</div><div class="research-icon"><svg viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M16 28h30v18h36v27H27V46" stroke="#178F95" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="28" r="7" fill="#A6E4DF" stroke="#178F95" stroke-width="2"/><circle cx="46" cy="46" r="7" fill="#A6E4DF" stroke="#178F95" stroke-width="2"/><circle cx="82" cy="73" r="7" fill="#A6E4DF" stroke="#178F95" stroke-width="2"/><circle cx="27" cy="73" r="7" fill="#A6E4DF" stroke="#178F95" stroke-width="2"/></svg></div><h3>Water Distribution Systems</h3><p>Optimal water distribution network management, pipe renewal planning, risk analysis, and asset management.</p></article>
-          <article class="research-card"><div class="card-num">FIELD / 04</div><div class="research-icon"><svg viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M18 78V19M18 78h68" stroke="#218B92" stroke-width="2.5"/><path d="m25 63 17-21 16 13 23-32" stroke="#17A49B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="42" cy="42" r="5" fill="#B7EAE3" stroke="#179F9B" stroke-width="2"/><circle cx="58" cy="55" r="5" fill="#B7EAE3" stroke="#179F9B" stroke-width="2"/><circle cx="81" cy="23" r="5" fill="#B7EAE3" stroke="#179F9B" stroke-width="2"/></svg></div><h3>Process Optimization</h3><p>Operational optimization of water and wastewater treatment plants, monitoring, and process modeling.</p></article>
-        </div>
-        <p class="source-note">Research scope: <a href="https://portal.dankook.ac.kr/ctt/dku/profinfo/detailSearch?uld=1AD1F2B7F763834BA87F87C43D5E562E" target="_blank" rel="noopener noreferrer">Dankook University faculty information ↗</a></p>
-      </div>
-    </section>
-    <section class="section" id="people">
-      <div class="container">
-        <div class="section-meta">Principal Investigator</div>
-        <h2 class="section-title">Meet Professor Dooil Kim.</h2>
-        <div class="prof-top">
-          <div class="prof-identity">
-            <div class="prof-card-head"><div class="avatar prof-avatar" aria-label="Portrait placeholder with DK initials"><span>DK</span></div><div><div class="person-role">PROFESSOR · 김두일</div><div class="person-name">Dooil Kim</div><p class="person-desc">College of Engineering<br>인프라건설공학과 · Dankook University</p></div></div>
-            <div class="prof-quicklinks"><a href="mailto:dikim21@dankook.ac.kr">dikim21@dankook.ac.kr ↗</a><span>+82-31-8005-3610</span><span>Engineering Building 1, Room 216</span></div><div class="prof-signature"><span>RESEARCH FOCUS</span><strong>Water Treatment · Water Systems · Optimization</strong></div>
-          </div>
-          <div class="prof-bio"><span class="prof-eyebrow">Faculty profile</span><h3>Research and practice in water and environmental engineering.</h3>
-            <p>Professor Kim received his Ph.D. from the Georgia Institute of Technology and his B.S. and M.S. from Seoul National University. Before joining Dankook University, he gained approximately ten years of industry and research experience at POSCO E&amp;C, KIST, and Samsung Engineering &amp; Construction.</p>
-            <p>His work encompasses membrane separation, ozone-based treatment and disinfection, water network management, and optimized operation of water and wastewater facilities. His earlier research included ozone contactor modeling and experimental techniques.</p>
-            <a class="official-link" href="https://portal.dankook.ac.kr/ctt/dku/profinfo/detailSearch?uld=1AD1F2B7F763834BA87F87C43D5E562E" target="_blank" rel="noopener noreferrer">View official university profile <span aria-hidden="true">↗</span></a>
-          </div>
-        </div>
-        <div class="prof-details">
-          <article class="detail-card"><div class="detail-top"><span>01 / EDUCATION</span><h3>Academic background</h3></div><div class="timeline"><div><b>2007</b><p><strong>Ph.D., Civil &amp; Environmental Engineering</strong><br>Georgia Institute of Technology</p></div><div><b>1993</b><p><strong>M.S., Civil Engineering (Urban Engineering)</strong><br>Seoul National University</p></div><div><b>1991</b><p><strong>B.S., Civil Engineering (Urban Engineering)</strong><br>Seoul National University</p></div></div></article>
-          <article class="detail-card"><div class="detail-top"><span>02 / EXPERIENCE</span><h3>Industry &amp; research</h3></div><div class="experience-list"><p><strong>POSCO E&amp;C</strong><br>Desalination, water reuse, and advanced water treatment</p><p><strong>Korea Institute of Science and Technology (KIST)</strong><br>Membrane desalination and ultraviolet treatment research</p><p><strong>Samsung Engineering &amp; Construction</strong><br>Advanced wastewater treatment research and practice</p></div></article>
-          <article class="detail-card"><div class="detail-top"><span>03 / TEACHING</span><h3>Selected courses · 2026</h3></div><ul class="course-list"><li>Water and Wastewater Systems <small>상하수도시스템</small></li><li>Advanced Infrastructure Simulation <small>첨단인프라시뮬레이션</small></li><li>Environmental Systems Modeling II <small>환경시스템모형기법Ⅱ</small></li><li>Environmental Engineering <small>환경공학</small></li></ul><p class="detail-footnote">Selected from 2026 course records; offerings vary by semester.</p></article>
-        </div>
-        <div class="member-banner"><div><strong>Graduate Researchers</strong><p class="member-muted">Research member profiles will be added after confirmation.</p></div><a href="mailto:dikim21@dankook.ac.kr" class="subtle-action">Research inquiries ↗</a></div>
-      </div>
-    </section>
-    <section class="section publications" id="publications">
-      <div class="container pub-layout">
-        <div><div class="section-meta">Publications</div><h2 class="section-title">Selected research publications.</h2><p class="section-lead">A selection of registered academic works from Professor Kim's official Dankook University faculty profile. This is not the complete publication record.</p><a class="official-link" href="https://portal.dankook.ac.kr/ctt/dku/profinfo/detailSearch?uld=1AD1F2B7F763834BA87F87C43D5E562E" target="_blank" rel="noopener noreferrer">View complete faculty record ↗</a></div>
-        <div class="pub-placeholder">
-          <div class="pub-row"><div class="pub-year">2025</div><div><div class="pub-title">Impact of Data Quality on CNN-Based Sewer Defect Detection</div><div class="pub-desc">Selected publication listed in the Dankook University faculty record.</div></div></div>
-          <div class="pub-row"><div class="pub-year">2025</div><div><div class="pub-title">Development of a real-time THMs prediction technology based on artificial intelligence and sensors</div><div class="pub-desc">Selected publication listed in the Dankook University faculty record.</div></div></div>
-          <div class="pub-row"><div class="pub-year">2025</div><div><div class="pub-title">The effect of temperature, ion valency, and solvent reuse on the solvent extraction desalination</div><div class="pub-desc">Selected publication listed in the Dankook University faculty record.</div><a class="pub-action" href="https://doi.org/10.12989/mwt.2025.16.2.095" target="_blank" rel="noopener noreferrer">DOI ↗</a></div></div>
-          <div class="pub-row"><div class="pub-year">2023</div><div><div class="pub-title">Role of Nanoscale Morphology on the Efficiency of Solvent-Based Desalination Method</div><div class="pub-desc">Selected publication listed in the Dankook University faculty record.</div><a class="pub-action" href="https://doi.org/10.1021/acsestwater.2c00473" target="_blank" rel="noopener noreferrer">DOI ↗</a></div></div>
-          <div class="pub-row"><div class="pub-year">2022</div><div><div class="pub-title">하수관거 통수능 해석을 위한 Huff 모형과 ABM 법의 적용성 분석</div><div class="pub-desc">Selected publication listed in the Dankook University faculty record.</div></div></div>
-          <div class="pub-row"><div class="pub-year">2021</div><div><div class="pub-title">Prioritizing water distribution pipe renewal based on seismic risk and construction cost</div><div class="pub-desc">Selected publication listed in the Dankook University faculty record.</div></div></div>
-        </div>
-      </div>
-    </section>
-    <section class="section contact" id="contact">
-      <div class="container"><div class="section-meta">Contact &amp; Collaboration</div><h2 class="section-title">Let's engineer what comes next.</h2>
-      <p class="contact-sub">For academic collaboration and inquiries regarding EVE LAB, please contact Professor Kim using the details below.</p>
-      <a href="mailto:dikim21@dankook.ac.kr" class="btn-primary contact-mail">Contact Professor Kim <span aria-hidden="true">↗</span></a>
-      <div class="contact-bottom"><div><small>INSTITUTION &amp; LOCATION</small><p>Dankook University, Jukjeon Campus<br>Engineering Building 1, Room 216<br>152 Jukjeon-ro, Suji-gu, Yongin-si, Gyeonggi-do, Korea</p></div><div><small>PROFESSOR'S CONTACT</small><p><a href="mailto:dikim21@dankook.ac.kr">dikim21@dankook.ac.kr</a><br>+82-31-8005-3610<br><a class="contact-source" href="https://portal.dankook.ac.kr/ctt/dku/profinfo/detailSearch?uld=1AD1F2B7F763834BA87F87C43D5E562E" target="_blank" rel="noopener noreferrer">Official faculty profile ↗</a></p></div></div></div>
-    </section>
-  </main>
-  <footer class="footer"><div class="container footer-inner"><span><strong>EVE LAB</strong> &nbsp;·&nbsp; Dankook University</span><span>© <span id="year">2026</span> EVE LAB. All rights reserved.</span><a href="#home">Back to top ↑</a></div></footer>
-  <script>
+<header class="site-header">
+<div class="container header-inner">
+<a aria-label="EVE LAB 홈페이지 홈" class="brand" href="#home">
+<span class="brand-mark"><svg aria-hidden="true" fill="none" viewbox="0 0 40 40"><path d="M7 25C13 17 17 27 23 19C28 13 30 17 34 11" stroke="#85E6D6" stroke-linecap="round" stroke-width="3"></path><path d="M7 32C13 24 17 34 23 26C28 20 30 24 34 18" stroke="#85E6D6" stroke-linecap="round" stroke-width="3"></path></svg></span>
+<span><span class="brand-label">EVE LAB</span><span class="brand-caption">DANKOOK UNIVERSITY</span></span>
+</a>
+<nav aria-label="주요 메뉴" class="nav" id="site-nav"><a href="#about">연구실 소개</a><a href="#research">연구분야</a><a href="#people">교수 소개</a><a href="#publications">연구실적</a><a href="#contact">연락처</a></nav>
+<a class="header-contact" href="#contact">문의하기 <span aria-hidden="true">↗</span></a>
+<button aria-controls="site-nav" aria-expanded="false" aria-label="메뉴 열기" class="menu-toggle"><svg fill="none" height="26" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="26"><path d="M3 7h18M3 12h18M3 17h18"></path></svg></button>
+</div>
+</header>
+<main id="home">
+<div class="hero">
+<div class="container hero-inner">
+<div class="hero-copy">
+<div class="eyebrow">물 · 환경 · 기술혁신</div>
+<h1>물의 가치를 연구하고,<br/><span>더 나은 미래를 만듭니다.</span></h1>
+<p class="hero-desc">고도정수처리, 오존 및 고도산화공정, 상수도 시설과 수처리 공정의 효율적 운영을 연구합니다.</p>
+<div class="hero-buttons"><a class="btn-primary" href="#research">연구분야 살펴보기 <span aria-hidden="true">↗</span></a><a class="text-link" href="#about">연구실 소개 <span aria-hidden="true">→</span></a></div>
+</div>
+<div aria-label="수처리 시스템을 표현한 일러스트" class="hero-art">
+<div class="art-grid"></div>
+<svg aria-label="물환경공학 추상 일러스트" class="hero-graphic" fill="none" role="img" viewbox="0 0 590 510">
+<defs><lineargradient gradientunits="userSpaceOnUse" id="ring" x1="150" x2="420" y1="90" y2="450"><stop stop-color="#72E6D1"></stop><stop offset=".52" stop-color="#277F94"></stop><stop offset="1" stop-color="#113D52"></stop></lineargradient><lineargradient gradientunits="userSpaceOnUse" id="water" x1="180" x2="400" y1="130" y2="400"><stop stop-color="#3A9DA5" stop-opacity=".8"></stop><stop offset="1" stop-color="#0A3347" stop-opacity=".8"></stop></lineargradient><filter id="glow"><fegaussianblur stddeviation="9"></fegaussianblur></filter></defs>
+<circle cx="300" cy="252" r="183" stroke="#5DD1CC" stroke-opacity=".12" stroke-width="1"></circle>
+<circle cx="300" cy="252" r="148" stroke="#63CAC6" stroke-dasharray="3 10" stroke-opacity=".19" stroke-width="1"></circle>
+<circle cx="300" cy="252" r="113" stroke="url(#ring)" stroke-opacity=".78" stroke-width="26"></circle>
+<circle cx="300" cy="252" r="95" stroke="#85EADD" stroke-opacity=".28" stroke-width="1"></circle>
+<circle cx="300" cy="252" fill="url(#water)" r="80" stroke="#7AEADD" stroke-opacity=".6" stroke-width="1.5"></circle>
+<path d="M235 269C251 237 278 289 296 253C311 222 332 256 362 228" stroke="#9DF6E7" stroke-linecap="round" stroke-width="6"></path>
+<path d="M241 289C256 270 280 308 298 283C315 261 343 281 358 258" stroke="#67C8CB" stroke-linecap="round" stroke-opacity=".7" stroke-width="3"></path>
+<path d="M116 251h-56v-73h92M443 252h81v91h-70M300 69V30h-90M300 434v48h-100" stroke="#70CFCB" stroke-opacity=".39" stroke-width="2"></path>
+<path d="M118 251h84M393 252h51M300 136V69M300 368v66" stroke="#72E4D4" stroke-opacity=".7" stroke-width="2"></path>
+<circle cx="116" cy="251" fill="#92F7E7" r="7"></circle><circle cx="443" cy="252" fill="#92F7E7" r="7"></circle><circle cx="300" cy="69" fill="#92F7E7" r="7"></circle><circle cx="300" cy="434" fill="#92F7E7" r="7"></circle>
+<circle cx="152" cy="178" fill="#7CE5D8" fill-opacity=".18" r="10" stroke="#65D1C6"></circle><circle cx="454" cy="343" fill="#7CE5D8" fill-opacity=".18" r="10" stroke="#65D1C6"></circle><circle cx="210" cy="30" fill="#9CFFF0" r="3"></circle><circle cx="200" cy="482" fill="#9CFFF0" r="3"></circle>
+<path d="M100 355L168 314M413 166L490 122" stroke="#8DD4D3" stroke-dasharray="5 10" stroke-opacity=".4"></path>
+<circle cx="76" cy="365" r="24" stroke="#71CCCA" stroke-opacity=".3"></circle><path d="M66 366l7 7 14-17" stroke="#A5F1E6" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+<circle cx="503" cy="116" r="24" stroke="#71CCCA" stroke-opacity=".3"></circle><path d="M489 122l9-12 9 7 12-17" stroke="#A5F1E6" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+</svg>
+<div class="art-label top"><small>핵심 연구분야 01</small>정수처리 및 담수화</div>
+<div class="art-label bottom"><small>핵심 연구분야 02</small>상수도 인프라 및 운영 최적화</div>
+</div>
+<div class="hero-index">EVE LAB / 2026</div>
+</div>
+</div>
+<div class="principles"><div class="container principles-inner"><div class="principle"><span class="principle-num">01</span><div><strong>공학 기반 연구</strong><small>과학적 근거를 바탕으로 한 해결책</small></div></div><div class="principle"><span class="principle-num">02</span><div><strong>데이터 기반 분석</strong><small>수질·운영자료 기반 연구</small></div></div><div class="principle"><span class="principle-num">03</span><div><strong>지속가능성</strong><small>지속가능한 물관리 기술</small></div></div></div></div>
+<section class="section" id="about">
+<div class="container about-grid">
+<div>
+<div class="section-meta">연구실 소개</div>
+<h2 class="section-title">더 안전하고 지속가능한 물환경을 연구합니다.</h2>
+<p class="section-lead">EVE LAB은 단국대학교 김두일 교수가 이끄는 물환경공학 연구실입니다.</p>
+<p class="section-lead">상하수도 고도처리, 오존·자외선 기반 산화공정, 상수관망 관리 및 수처리 공정의 효율적인 운영을 중심으로 연구를 수행하고 있습니다.</p>
+<div class="about-list"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="m8 12 3 3 5-6"></path></svg> 현장 적용 연구 · 수처리 · 물 인프라</div>
+</div>
+<div aria-label="수처리 기술을 표현한 추상 그래픽" class="about-visual" role="img">
+<div class="about-caption">WATER × TECHNOLOGY</div><div class="about-circles"><span></span><span></span><span></span></div><div class="about-kicker">EVE</div>
+</div>
+</div>
+</section>
+<section class="section research" id="research">
+<div class="container">
+<div class="section-heading-row"><div><div class="section-meta">연구분야</div><h2 class="section-title">주요 연구분야</h2></div><p class="section-lead">단국대학교 공식 교원정보를 바탕으로 정리한 주요 연구분야입니다.</p></div>
+<div class="research-grid research-grid-four">
+<article class="research-card"><div class="card-num">연구분야 / 01</div><div class="research-icon"><svg aria-hidden="true" fill="none" viewbox="0 0 100 100"><path d="M9 57c15-14 26 14 41 0s26 14 41 0M9 73c15-14 26 14 41 0s26 14 41 0" stroke="#25B3A9" stroke-linecap="round" stroke-width="5"></path><path d="M30 20h40v23H30z" fill="#D7F4EF" stroke="#178C8E" stroke-width="2"></path><path d="M39 29h22M39 36h22" stroke="#178C8E" stroke-width="2"></path></svg></div><h3>고도정수처리 및 담수화</h3><p>막분리 공정, 해수담수화, 하수 재이용 및 고도정수처리 기술을 연구합니다.</p></article>
+<article class="research-card"><div class="card-num">연구분야 / 02</div><div class="research-icon"><svg aria-hidden="true" fill="none" viewbox="0 0 100 100"><circle cx="50" cy="50" r="28" stroke="#1B9395" stroke-width="3"></circle><circle cx="50" cy="50" fill="#C5EDE7" r="14" stroke="#1B9395" stroke-width="3"></circle><path d="M50 9v17M50 74v17M9 50h17M74 50h17" stroke="#2DB6AC" stroke-linecap="round" stroke-width="4"></path><circle cx="50" cy="50" fill="#178F95" r="4"></circle></svg></div><h3>오존·고도산화 및 소독</h3><p>오존, 자외선 및 고도산화공정을 활용한 병원성 미생물 불활성화와 미량오염물질 제거를 연구합니다.</p></article>
+<article class="research-card"><div class="card-num">연구분야 / 03</div><div class="research-icon"><svg aria-hidden="true" fill="none" viewbox="0 0 100 100"><path d="M16 28h30v18h36v27H27V46" stroke="#178F95" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path><circle cx="16" cy="28" fill="#A6E4DF" r="7" stroke="#178F95" stroke-width="2"></circle><circle cx="46" cy="46" fill="#A6E4DF" r="7" stroke="#178F95" stroke-width="2"></circle><circle cx="82" cy="73" fill="#A6E4DF" r="7" stroke="#178F95" stroke-width="2"></circle><circle cx="27" cy="73" fill="#A6E4DF" r="7" stroke="#178F95" stroke-width="2"></circle></svg></div><h3>상수관망 관리</h3><p>상수관망 운영 최적화, 관로 교체 우선순위, 위험도 분석 및 자산관리를 연구합니다.</p></article>
+<article class="research-card"><div class="card-num">연구분야 / 04</div><div class="research-icon"><svg aria-hidden="true" fill="none" viewbox="0 0 100 100"><path d="M18 78V19M18 78h68" stroke="#218B92" stroke-width="2.5"></path><path d="m25 63 17-21 16 13 23-32" stroke="#17A49B" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path><circle cx="42" cy="42" fill="#B7EAE3" r="5" stroke="#179F9B" stroke-width="2"></circle><circle cx="58" cy="55" fill="#B7EAE3" r="5" stroke="#179F9B" stroke-width="2"></circle><circle cx="81" cy="23" fill="#B7EAE3" r="5" stroke="#179F9B" stroke-width="2"></circle></svg></div><h3>수처리 공정 최적화</h3><p>정수장·하수처리장 운영 최적화, 수질 모니터링 및 공정 모델링을 연구합니다.</p></article>
+</div>
+<p class="source-note">연구분야 출처: <a href="https://portal.dankook.ac.kr/ctt/dku/profinfo/detailSearch?uld=1AD1F2B7F763834BA87F87C43D5E562E" rel="noopener noreferrer" target="_blank">단국대학교 교원정보 ↗</a></p>
+</div>
+</section>
+<section class="section" id="people">
+<div class="container">
+<div class="section-meta">지도교수</div>
+<h2 class="section-title">김두일 교수</h2>
+<div class="prof-top">
+<div class="prof-identity">
+<div class="prof-card-head"><div aria-label="교수님 사진 추가 예정(현재 임시 이미지)" class="avatar prof-avatar"><span>DK</span></div><div><div class="person-role">교수 · 김두일</div><div class="person-name">김두일</div><p class="person-desc">단국대학교 공과대학<br/>인프라건설공학과 · 단국대학교</p></div></div>
+<div class="prof-quicklinks"><a href="mailto:dikim21@dankook.ac.kr">dikim21@dankook.ac.kr ↗</a><span>+82-31-8005-3610</span><span>제1공학관 216호</span></div><div class="prof-signature"><span>주요 연구분야</span><strong>수처리 · 상수도 시스템 · 운영 최적화</strong></div>
+</div>
+<div class="prof-bio"><span class="prof-eyebrow">교수 소개</span><h3>물환경공학 분야의 연구와 현장 경험을 바탕으로</h3>
+<p>김두일 교수는 서울대학교에서 학사 및 석사학위를, 미국 조지아 공과대학교에서 박사학위를 취득했습니다. 단국대학교 부임 전에는 포스코건설, 한국과학기술연구원(KIST), Samsung Engineering &amp; Construction 등에서 약 10년간 산업 및 연구 현장 경험을 쌓았습니다.</p>
+<p>주요 연구분야는 막분리, 오존 기반 처리·소독, 상수관망 관리, 상하수도 시설 운영 최적화입니다. 오존 접촉조 모델링 및 실험기법에 관한 연구도 수행했습니다.</p>
+<a class="official-link" href="https://portal.dankook.ac.kr/ctt/dku/profinfo/detailSearch?uld=1AD1F2B7F763834BA87F87C43D5E562E" rel="noopener noreferrer" target="_blank">단국대학교 공식 교수정보 보기 <span aria-hidden="true">↗</span></a>
+</div>
+</div>
+<div class="prof-details">
+<article class="detail-card"><div class="detail-top"><span>01 / 학력</span><h3>학력</h3></div><div class="timeline"><div><b>2007</b><p><strong>토목환경공학 박사</strong><br/>조지아 공과대학교 (Georgia Tech)</p></div><div><b>1993</b><p><strong>토목공학 석사 (도시공학)</strong><br/>서울대학교</p></div><div><b>1991</b><p><strong>토목공학 학사 (도시공학)</strong><br/>서울대학교</p></div></div></article>
+<article class="detail-card"><div class="detail-top"><span>02 / 경력</span><h3>산업체 및 연구 경력</h3></div><div class="experience-list"><p><strong>POSCO E&amp;C</strong><br/>담수화, 물 재이용 및 고도수처리</p><p><strong>한국과학기술연구원 (KIST)</strong><br/>막분리 담수화 및 자외선 처리 연구</p><p><strong>Samsung Engineering &amp; Construction</strong><br/>고도하수처리 관련 연구 및 실무</p></div></article>
+<article class="detail-card"><div class="detail-top"><span>03 / 강의</span><h3>주요 담당 교과목 · 2026</h3></div><ul class="course-list"><li>상하수도시스템 <small>Water and Wastewater Systems</small></li><li>첨단인프라시뮬레이션 <small>Advanced Infrastructure Simulation</small></li><li>환경시스템모형기법Ⅱ <small>Environmental Systems Modeling II</small></li><li>환경공학 <small>Environmental Engineering</small></li></ul><p class="detail-footnote">2026년 강의 기록 중 일부이며, 학기별 개설 여부는 달라질 수 있습니다.</p></article>
+</div>
+<div class="member-banner"><div><strong>연구실 구성원</strong><p class="member-muted">연구원 정보는 확인 후 추가할 예정입니다.</p></div><a class="subtle-action" href="mailto:dikim21@dankook.ac.kr">연구 문의 ↗</a></div>
+</div>
+</section>
+<section class="section publications" id="publications">
+<div class="container pub-layout">
+<div><div class="section-meta">연구실적</div><h2 class="section-title">주요 연구실적</h2><p class="section-lead">단국대학교 공식 교원정보에 등록된 주요 논문 일부를 소개합니다. 전체 연구실적 목록은 아닙니다.</p><a class="official-link" href="https://portal.dankook.ac.kr/ctt/dku/profinfo/detailSearch?uld=1AD1F2B7F763834BA87F87C43D5E562E" rel="noopener noreferrer" target="_blank">전체 교수 연구실적 확인 ↗</a></div>
+<div class="pub-placeholder">
+<div class="pub-row"><div class="pub-year">2025</div><div><div class="pub-title">Impact of Data Quality on CNN-Based Sewer Defect Detection</div><div class="pub-desc">단국대학교 교원정보에 등록된 주요 논문</div></div></div>
+<div class="pub-row"><div class="pub-year">2025</div><div><div class="pub-title">Development of a real-time THMs prediction technology based on artificial intelligence and sensors</div><div class="pub-desc">단국대학교 교원정보에 등록된 주요 논문</div></div></div>
+<div class="pub-row"><div class="pub-year">2025</div><div><div class="pub-title">The effect of temperature, ion valency, and solvent reuse on the solvent extraction desalination</div><div class="pub-desc">단국대학교 교원정보에 등록된 주요 논문</div><a class="pub-action" href="https://doi.org/10.12989/mwt.2025.16.2.095" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></div>
+<div class="pub-row"><div class="pub-year">2023</div><div><div class="pub-title">Role of Nanoscale Morphology on the Efficiency of Solvent-Based Desalination Method</div><div class="pub-desc">단국대학교 교원정보에 등록된 주요 논문</div><a class="pub-action" href="https://doi.org/10.1021/acsestwater.2c00473" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></div>
+<div class="pub-row"><div class="pub-year">2022</div><div><div class="pub-title">하수관거 통수능 해석을 위한 Huff 모형과 ABM 법의 적용성 분석</div><div class="pub-desc">단국대학교 교원정보에 등록된 주요 논문</div></div></div>
+<div class="pub-row"><div class="pub-year">2021</div><div><div class="pub-title">Prioritizing water distribution pipe renewal based on seismic risk and construction cost</div><div class="pub-desc">단국대학교 교원정보에 등록된 주요 논문</div></div></div>
+</div>
+</div>
+</section>
+<section class="section contact" id="contact">
+<div class="container"><div class="section-meta">연락처 및 연구 협력</div><h2 class="section-title">연구 협력과 문의를 환영합니다.</h2>
+<p class="contact-sub">EVE LAB과의 연구 협력 및 문의는 아래 연락처로 연락해 주시기 바랍니다.</p>
+<a class="btn-primary contact-mail" href="mailto:dikim21@dankook.ac.kr">교수님께 이메일 보내기 <span aria-hidden="true">↗</span></a>
+<div class="contact-bottom"><div><small>소속 및 위치</small><p>단국대학교 죽전캠퍼스<br/>제1공학관 216호<br/>경기도 용인시 수지구 죽전로 152</p></div><div><small>교수 연락처</small><p><a href="mailto:dikim21@dankook.ac.kr">dikim21@dankook.ac.kr</a><br/>+82-31-8005-3610<br/><a class="contact-source" href="https://portal.dankook.ac.kr/ctt/dku/profinfo/detailSearch?uld=1AD1F2B7F763834BA87F87C43D5E562E" rel="noopener noreferrer" target="_blank">단국대학교 교수정보 ↗</a></p></div></div></div>
+</section>
+</main>
+<footer class="footer"><div class="container footer-inner"><span><strong>EVE LAB</strong>  ·  단국대학교</span><span>© <span id="year">2026</span> EVE LAB. All rights reserved.</span><a href="#home">맨 위로 ↑</a></div></footer>
+<script>
    const toggle=document.querySelector('.menu-toggle'); const nav=document.querySelector('.nav');
-   toggle.addEventListener('click',()=>{const opening=!nav.classList.contains('open');nav.classList.toggle('open',opening);toggle.setAttribute('aria-expanded',String(opening));toggle.setAttribute('aria-label',opening?'Close menu':'Open menu')});
-   nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open menu')}));
+   toggle.addEventListener('click',()=>{const opening=!nav.classList.contains('open');nav.classList.toggle('open',opening);toggle.setAttribute('aria-expanded',String(opening));toggle.setAttribute('aria-label',opening?'메뉴 닫기':'메뉴 열기')});
+   nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','메뉴 열기')}));
    document.getElementById('year').textContent=new Date().getFullYear();
   </script>
 </body>
