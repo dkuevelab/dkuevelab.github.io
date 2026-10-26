@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="단국대학교 EVE LAB. 김두일 교수 환경공학 연구실의 연구분야, 교수 소개, 연구실 구성원 및 주요 연구실적을 소개합니다." name="description"/>
+<meta content="단국대학교 EVE LAB 상하수도공학 연구실. 상하수도 관로 잔존수명 예측, 인프라 자산관리, AI 기반 수질·운영 예측 및 고도수처리 연구를 소개합니다." name="description"/>
 <meta content="#071d29" name="theme-color"/>
-<title>EVE LAB | 단국대학교 김두일 교수 환경공학 연구실</title>
+<title>EVE LAB | 단국대학교 상하수도공학 연구실</title>
 <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -63,25 +63,21 @@ body{font-family:var(--font-ko);word-break:keep-all;overflow-wrap:break-word;let
 .official-field-strip{background:#e7f3f2;border-left:3px solid #20a99f;padding:15px 20px;margin-top:27px;border-radius:2px}
 .official-field-strip strong{font-size:12px;color:#0b6965}
 .official-field-strip p{font-size:12px;color:#4f7477;margin:7px 0 0;line-height:1.8}
-.members{background:#fff}
-.members-heading{display:flex;justify-content:space-between;align-items:center;gap:30px;margin-bottom:29px}
-.members-heading .section-lead{max-width:690px}
-.member-update-label{font-size:11px;color:#137e78;border:1px solid #cde9e5;background:#f1faf9;border-radius:99px;padding:9px 12px;white-space:nowrap}
-.member-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
-.member-card{border:1px solid #dbe9e8;border-radius:6px;overflow:hidden;background:#fff;box-shadow:0 8px 24px rgba(5,41,49,.04)}
-.member-photo-area{height:280px;background:linear-gradient(145deg,#e1f0ef 0%,#c3dedc 100%);position:relative;overflow:hidden}
-.member-photo-area:before{content:'';position:absolute;width:250px;height:250px;border:1px solid #b1d5d0;border-radius:50%;top:-130px;right:-110px}
-.member-photo-fallback{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:17px;color:#6d9da1}
-.member-photo-fallback small{font-size:11px;letter-spacing:.02em;color:#6d8e92}
-.member-photo-area img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%}
-.member-info{padding:24px 24px 27px}
-.member-info span{font-size:10px;color:#139e93;letter-spacing:.08em;font-weight:800}
-.member-info h3{font-size:19px;margin:10px 0;font-weight:750;color:#163b43}
-.member-info p{font-size:12px;color:#768f95;line-height:1.7;margin:0}
-.members-note{font-size:11px;color:#879da2;line-height:1.8;margin-top:19px}
-@media(max-width:980px){.member-photo-area{height:220px}}
-@media(max-width:760px){.member-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.member-photo-area{height:190px}.member-info{padding:17px}.members-heading{display:block}.member-update-label{display:inline-block;margin-top:14px}}
-@media(max-width:440px){.member-grid{grid-template-columns:1fr 1fr}.member-photo-area{height:168px}.member-info h3{font-size:15px}.member-info span{font-size:9px}.member-info p{font-size:11px}}
+
+/* Infrastructure-focused homepage copy and legible long Korean headlines */
+.hero h1{font-size:clamp(35px,3.65vw,53px);line-height:1.35;letter-spacing:-.055em}
+.hero-desc{max-width:535px;line-height:1.95}
+.hero-desc strong{color:#D8F8F3;font-weight:800}
+.eyebrow{letter-spacing:.075em}
+.brand-caption{font-size:8px;letter-spacing:.04em}
+.principle{min-width:0}.principle strong{font-size:14px}.principle small{font-size:11px;line-height:1.5}
+.research-grid-four .research-card{min-height:265px}.research-grid-four .research-card p{font-size:13px;line-height:1.8}
+.research-grid-four .card-num{letter-spacing:.065em;font-size:10px}
+.art-label{max-width:230px;line-height:1.5}
+.prof-signature strong{font-size:14px}
+@media(max-width:1100px){.hero h1{font-size:clamp(32px,4.1vw,47px)}}
+@media(max-width:760px){.hero h1{font-size:clamp(32px,6.8vw,48px)}.hero-copy{padding-top:53px}.art-label{max-width:190px}}
+@media(max-width:440px){.hero h1{font-size:clamp(29px,7.7vw,36px)}.hero-desc{font-size:13px}.brand-caption{font-size:7px}}
 </style>
 <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" rel="stylesheet"/></head>
 <body>
@@ -89,9 +85,9 @@ body{font-family:var(--font-ko);word-break:keep-all;overflow-wrap:break-word;let
 <div class="container header-inner">
 <a aria-label="EVE LAB 홈페이지 홈" class="brand" href="#home">
 <span class="brand-mark"><svg aria-hidden="true" fill="none" viewbox="0 0 40 40"><path d="M7 25C13 17 17 27 23 19C28 13 30 17 34 11" stroke="#85E6D6" stroke-linecap="round" stroke-width="3"></path><path d="M7 32C13 24 17 34 23 26C28 20 30 24 34 18" stroke="#85E6D6" stroke-linecap="round" stroke-width="3"></path></svg></span>
-<span><span class="brand-label">EVE LAB</span><span class="brand-caption">DANKOOK UNIVERSITY</span></span>
+<span><span class="brand-label">EVE LAB</span><span class="brand-caption">WATER &amp; WASTEWATER ENGINEERING · DKU</span></span>
 </a>
-<nav aria-label="주요 메뉴" class="nav" id="site-nav"><a href="#about">연구실 소개</a><a href="#research">연구분야</a><a href="#people">지도교수</a><a href="#members">구성원</a><a href="#publications">연구실적</a><a href="#contact">연락처</a></nav>
+<nav aria-label="주요 메뉴" class="nav" id="site-nav"><a href="#about">연구실 소개</a><a href="#research">연구분야</a><a href="#people">지도교수</a><a href="#publications">연구실적</a><a href="#contact">연락처</a></nav>
 <a class="header-contact" href="#contact">문의하기 <span aria-hidden="true">↗</span></a>
 <button aria-controls="site-nav" aria-expanded="false" aria-label="메뉴 열기" class="menu-toggle"><svg fill="none" height="26" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="26"><path d="M3 7h18M3 12h18M3 17h18"></path></svg></button>
 </div>
@@ -100,59 +96,92 @@ body{font-family:var(--font-ko);word-break:keep-all;overflow-wrap:break-word;let
 <div class="hero">
 <div class="container hero-inner">
 <div class="hero-copy">
-<div class="eyebrow">물 · 환경 · 기술혁신</div>
-<h1>물의 가치를 연구하고,<br/><span>더 나은 미래를 만듭니다.</span></h1>
-<p class="hero-desc">고도정수처리, 오존 및 고도산화공정, 상수도 시설과 수처리 공정의 효율적 운영을 연구합니다.</p>
+<div class="eyebrow">상하수도공학 · 스마트 인프라</div>
+<h1>상하수도 인프라의 미래,<br/><span>데이터와 AI로 설계합니다.</span></h1>
+<p class="hero-desc">상하수도 관로의 <strong>잔존수명 예측</strong>, <strong>자산관리</strong>, <strong>AI 기반 운영 최적화</strong>를 통해 안전하고 지속가능한 상하수도 시스템을 연구합니다.</p>
 <div class="hero-buttons"><a class="btn-primary" href="#research">연구분야 살펴보기 <span aria-hidden="true">↗</span></a><a class="text-link" href="#about">연구실 소개 <span aria-hidden="true">→</span></a></div>
 </div>
-<div aria-label="수처리 시스템을 표현한 일러스트" class="hero-art">
+<div aria-label="관로망과 데이터 기반 진단을 표현한 일러스트" class="hero-art">
 <div class="art-grid"></div>
-<svg aria-label="물환경공학 추상 일러스트" class="hero-graphic" fill="none" role="img" viewbox="0 0 590 510">
-<defs><lineargradient gradientunits="userSpaceOnUse" id="ring" x1="150" x2="420" y1="90" y2="450"><stop stop-color="#72E6D1"></stop><stop offset=".52" stop-color="#277F94"></stop><stop offset="1" stop-color="#113D52"></stop></lineargradient><lineargradient gradientunits="userSpaceOnUse" id="water" x1="180" x2="400" y1="130" y2="400"><stop stop-color="#3A9DA5" stop-opacity=".8"></stop><stop offset="1" stop-color="#0A3347" stop-opacity=".8"></stop></lineargradient><filter id="glow"><fegaussianblur stddeviation="9"></fegaussianblur></filter></defs>
-<circle cx="300" cy="252" r="183" stroke="#5DD1CC" stroke-opacity=".12" stroke-width="1"></circle>
-<circle cx="300" cy="252" r="148" stroke="#63CAC6" stroke-dasharray="3 10" stroke-opacity=".19" stroke-width="1"></circle>
-<circle cx="300" cy="252" r="113" stroke="url(#ring)" stroke-opacity=".78" stroke-width="26"></circle>
-<circle cx="300" cy="252" r="95" stroke="#85EADD" stroke-opacity=".28" stroke-width="1"></circle>
-<circle cx="300" cy="252" fill="url(#water)" r="80" stroke="#7AEADD" stroke-opacity=".6" stroke-width="1.5"></circle>
-<path d="M235 269C251 237 278 289 296 253C311 222 332 256 362 228" stroke="#9DF6E7" stroke-linecap="round" stroke-width="6"></path>
-<path d="M241 289C256 270 280 308 298 283C315 261 343 281 358 258" stroke="#67C8CB" stroke-linecap="round" stroke-opacity=".7" stroke-width="3"></path>
-<path d="M116 251h-56v-73h92M443 252h81v91h-70M300 69V30h-90M300 434v48h-100" stroke="#70CFCB" stroke-opacity=".39" stroke-width="2"></path>
-<path d="M118 251h84M393 252h51M300 136V69M300 368v66" stroke="#72E4D4" stroke-opacity=".7" stroke-width="2"></path>
-<circle cx="116" cy="251" fill="#92F7E7" r="7"></circle><circle cx="443" cy="252" fill="#92F7E7" r="7"></circle><circle cx="300" cy="69" fill="#92F7E7" r="7"></circle><circle cx="300" cy="434" fill="#92F7E7" r="7"></circle>
-<circle cx="152" cy="178" fill="#7CE5D8" fill-opacity=".18" r="10" stroke="#65D1C6"></circle><circle cx="454" cy="343" fill="#7CE5D8" fill-opacity=".18" r="10" stroke="#65D1C6"></circle><circle cx="210" cy="30" fill="#9CFFF0" r="3"></circle><circle cx="200" cy="482" fill="#9CFFF0" r="3"></circle>
-<path d="M100 355L168 314M413 166L490 122" stroke="#8DD4D3" stroke-dasharray="5 10" stroke-opacity=".4"></path>
-<circle cx="76" cy="365" r="24" stroke="#71CCCA" stroke-opacity=".3"></circle><path d="M66 366l7 7 14-17" stroke="#A5F1E6" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
-<circle cx="503" cy="116" r="24" stroke="#71CCCA" stroke-opacity=".3"></circle><path d="M489 122l9-12 9 7 12-17" stroke="#A5F1E6" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+<svg aria-label="상하수도 관망·잔존수명·스마트 분석 일러스트" class="hero-graphic" fill="none" role="img" viewBox="0 0 590 510">
+<defs>
+<linearGradient id="pipes" x1="100" x2="485" y1="120" y2="360" gradientUnits="userSpaceOnUse"><stop stop-color="#65D6CE"/><stop offset=".55" stop-color="#3D9AAB"/><stop offset="1" stop-color="#1B526A"/></linearGradient>
+<linearGradient id="centerFill" x1="195" x2="403" y1="141" y2="385" gradientUnits="userSpaceOnUse"><stop stop-color="#1A6376"/><stop offset="1" stop-color="#0A2A3B"/></linearGradient>
+<filter id="lightGlow"><feGaussianBlur stdDeviation="14"/></filter>
+</defs>
+<ellipse cx="292" cy="260" rx="208" ry="195" stroke="#9DEADB" stroke-opacity=".09" stroke-width="1"/>
+<ellipse cx="292" cy="260" rx="175" ry="168" stroke="#9DEADB" stroke-opacity=".14" stroke-dasharray="4 9"/>
+<!-- Abstract distribution network -->
+<path d="M56 145H173V216H220M530 342H418V295H387M111 390H230V354M487 100H410V172H369" stroke="url(#pipes)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity=".75"/>
+<path d="M56 145H173V216H220M530 342H418V295H387M111 390H230V354M487 100H410V172H369" stroke="#A0F5E4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 12" opacity=".65"/>
+<g fill="#0E3D4D" stroke="#72E2D3" stroke-width="4"><circle cx="56" cy="145" r="13"/><circle cx="173" cy="216" r="11"/><circle cx="530" cy="342" r="13"/><circle cx="418" cy="295" r="11"/><circle cx="111" cy="390" r="13"/><circle cx="487" cy="100" r="13"/></g>
+<g stroke="#62D7D2" stroke-opacity=".45" stroke-width="2" stroke-dasharray="3 8"><path d="M172 216L112 265"/><path d="M418 295L476 258"/><path d="M247 355L207 455"/></g>
+<!-- Remaining-life dial and smart prediction -->
+<circle cx="295" cy="260" r="119" stroke="#2D697B" stroke-width="31"/>
+<circle cx="295" cy="260" r="119" stroke="#64DDCE" stroke-width="31" stroke-dasharray="505 748" stroke-linecap="round" transform="rotate(135 295 260)"/>
+<circle cx="295" cy="260" r="93" fill="url(#centerFill)" stroke="#98EFE4" stroke-opacity=".33" stroke-width="1.5"/>
+<circle cx="295" cy="260" r="76" stroke="#8DE5DD" stroke-opacity=".25" stroke-dasharray="3 7"/>
+<text x="295" y="226" text-anchor="middle" fill="#96DDD8" font-size="13" font-weight="700" letter-spacing="3">RUL</text>
+<path d="M240 266L260 253L280 268L297 232L316 244L331 222L352 231" stroke="#9EF9E9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M240 285H350" stroke="#74CAC8" stroke-width="1.5" stroke-opacity=".5"/>
+<text x="295" y="318" text-anchor="middle" fill="#D5FAF3" font-size="13" font-weight="700" letter-spacing="1">LIFECYCLE</text>
+<g fill="#9EF5E8"><circle cx="260" cy="253" r="4"/><circle cx="297" cy="232" r="4"/><circle cx="331" cy="222" r="4"/></g>
+<circle cx="295" cy="260" r="159" stroke="#8AEEE1" stroke-opacity=".13" stroke-width="1" stroke-dasharray="1 13"/>
+<g fill="#9EF5E8" opacity=".7"><circle cx="102" cy="265" r="3"/><circle cx="475" cy="258" r="3"/><circle cx="207" cy="455" r="3"/></g>
 </svg>
-<div class="art-label top"><small>핵심 연구분야 01</small>정수처리 및 담수화</div>
-<div class="art-label bottom"><small>핵심 연구분야 02</small>상수도 인프라 및 운영 최적화</div>
+<div class="art-label top"><small>REMAINING USEFUL LIFE</small>상하수도 관로 잔존수명 예측</div>
+<div class="art-label bottom"><small>ASSET MANAGEMENT × AI</small>자산관리 · AI 기반 예측</div>
 </div>
 <div class="hero-index">EVE LAB / 2026</div>
 </div>
 </div>
-<div class="principles"><div class="container principles-inner"><div class="principle"><span class="principle-num">01</span><div><strong>공학 기반 연구</strong><small>과학적 근거를 바탕으로 한 해결책</small></div></div><div class="principle"><span class="principle-num">02</span><div><strong>데이터 기반 분석</strong><small>수질·운영자료 기반 연구</small></div></div><div class="principle"><span class="principle-num">03</span><div><strong>지속가능성</strong><small>지속가능한 물관리 기술</small></div></div></div></div>
+<div class="principles"><div class="container principles-inner">
+<div class="principle"><span class="principle-num">01</span><div><strong>관로 잔존수명 예측</strong><small>노후 상하수도 시설의 상태와 수명 평가</small></div></div>
+<div class="principle"><span class="principle-num">02</span><div><strong>상하수도 자산관리</strong><small>위험도·생애주기·개량 우선순위</small></div></div>
+<div class="principle"><span class="principle-num">03</span><div><strong>AI 기반 스마트 운영</strong><small>수질·시설 데이터 분석과 예측</small></div></div>
+</div></div>
 <section class="section" id="about">
 <div class="container about-grid">
 <div>
 <div class="section-meta">연구실 소개</div>
-<h2 class="section-title">더 안전하고 지속가능한 물환경을 연구합니다.</h2>
-<p class="section-lead">EVE LAB은 단국대학교 김두일 교수가 이끄는 물환경공학 연구실입니다.</p>
-<p class="section-lead">상하수도 고도처리, 오존·자외선 기반 산화공정, 상수관망 관리 및 수처리 공정의 효율적인 운영을 중심으로 연구를 수행하고 있습니다.</p>
-<div class="about-list"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="m8 12 3 3 5-6"></path></svg> 현장 적용 연구 · 수처리 · 물 인프라</div>
+<h2 class="section-title">상하수도 인프라의 수명과 운영을 데이터로 해석합니다.</h2>
+<p class="section-lead">EVE LAB은 단국대학교 김두일 교수님이 이끄는 <strong>상하수도공학 연구실</strong>입니다.</p>
+<p class="section-lead">노후 관로의 잔존수명 예측과 자산관리, AI를 활용한 수질·시설 운영 분석을 핵심으로, 정수·하수처리 공정 최적화와 고도수처리까지 폭넓게 연구합니다.</p>
+<div class="about-list"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="m8 12 3 3 5-6"></path></svg> 관로 진단 · 자산관리 · AI 기반 의사결정</div>
 </div>
-<div aria-label="수처리 기술을 표현한 추상 그래픽" class="about-visual" role="img">
-<div class="about-caption">WATER × TECHNOLOGY</div><div class="about-circles"><span></span><span></span><span></span></div><div class="about-kicker">EVE</div>
+<div aria-label="상하수도 자산의 생애주기와 스마트 관리 기술을 표현한 그래픽" class="about-visual" role="img">
+<div class="about-caption">WATER INFRASTRUCTURE × INTELLIGENCE</div><div class="about-circles"><span></span><span></span><span></span></div><div class="about-kicker">EVE</div>
 </div>
 </div>
 </section>
 <section class="section research" id="research">
 <div class="container">
-<div class="section-heading-row"><div><div class="section-meta">연구분야</div><h2 class="section-title">주요 연구분야</h2></div><p class="section-lead">단국대학교 교원정보의 한글 교수소개 및 연구분야 자료를 기반으로 구성했습니다.</p></div>
+<div class="section-heading-row"><div><div class="section-meta">연구분야</div><h2 class="section-title">상하수도 생애주기부터 스마트 운영까지</h2></div><p class="section-lead">관로 잔존수명, 인프라 자산관리, AI 기반 예측을 중심으로 상하수도 처리공정의 효율적 운영까지 연결합니다.</p></div>
 <div class="research-grid research-grid-four">
-<article class="research-card"><div class="card-num">연구분야 / 01</div><div class="research-icon"><svg aria-hidden="true" fill="none" viewbox="0 0 100 100"><path d="M9 57c15-14 26 14 41 0s26 14 41 0M9 73c15-14 26 14 41 0s26 14 41 0" stroke="#25B3A9" stroke-linecap="round" stroke-width="5"></path><path d="M30 20h40v23H30z" fill="#D7F4EF" stroke="#178C8E" stroke-width="2"></path><path d="M39 29h22M39 36h22" stroke="#178C8E" stroke-width="2"></path></svg></div><h3>분리막 및 고도수처리</h3><p>분리막을 활용한 해수담수화와 하수재이용, 상수고도처리 기술을 연구합니다.</p></article>
-<article class="research-card"><div class="card-num">연구분야 / 02</div><div class="research-icon"><svg aria-hidden="true" fill="none" viewbox="0 0 100 100"><circle cx="50" cy="50" r="28" stroke="#1B9395" stroke-width="3"></circle><circle cx="50" cy="50" fill="#C5EDE7" r="14" stroke="#1B9395" stroke-width="3"></circle><path d="M50 9v17M50 74v17M9 50h17M74 50h17" stroke="#2DB6AC" stroke-linecap="round" stroke-width="4"></path><circle cx="50" cy="50" fill="#178F95" r="4"></circle></svg></div><h3>오존·AOP 및 UV</h3><p>오존·고도산화공정을 이용한 병원성 미생물 제어와 미량유해물질 제거를 연구합니다.</p></article>
-<article class="research-card"><div class="card-num">연구분야 / 03</div><div class="research-icon"><svg aria-hidden="true" fill="none" viewbox="0 0 100 100"><path d="M16 28h30v18h36v27H27V46" stroke="#178F95" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path><circle cx="16" cy="28" fill="#A6E4DF" r="7" stroke="#178F95" stroke-width="2"></circle><circle cx="46" cy="46" fill="#A6E4DF" r="7" stroke="#178F95" stroke-width="2"></circle><circle cx="82" cy="73" fill="#A6E4DF" r="7" stroke="#178F95" stroke-width="2"></circle><circle cx="27" cy="73" fill="#A6E4DF" r="7" stroke="#178F95" stroke-width="2"></circle></svg></div><h3>상수관망 최적관리</h3><p>상수관망의 운영 효율 개선, 관로 관리, 위험도 분석과 자산관리 기법을 연구합니다.</p></article>
-<article class="research-card"><div class="card-num">연구분야 / 04</div><div class="research-icon"><svg aria-hidden="true" fill="none" viewbox="0 0 100 100"><path d="M18 78V19M18 78h68" stroke="#218B92" stroke-width="2.5"></path><path d="m25 63 17-21 16 13 23-32" stroke="#17A49B" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path><circle cx="42" cy="42" fill="#B7EAE3" r="5" stroke="#179F9B" stroke-width="2"></circle><circle cx="58" cy="55" fill="#B7EAE3" r="5" stroke="#179F9B" stroke-width="2"></circle><circle cx="81" cy="23" fill="#B7EAE3" r="5" stroke="#179F9B" stroke-width="2"></circle></svg></div><h3>상하수도 운영 최적화</h3><p>정수장·하수처리장 공정 모델링과 수처리 시설의 운영 최적화를 연구합니다.</p></article>
+<article class="research-card">
+  <div class="card-num">연구분야 / 01 · REMAINING LIFE</div>
+  <div class="research-icon"><svg aria-hidden="true" fill="none" viewBox="0 0 100 100"><path d="M14 31h31v19h40v24H28V50" stroke="#178F95" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="14" cy="31" r="8" fill="#C2EEE8" stroke="#178F95" stroke-width="3"/><circle cx="45" cy="50" r="8" fill="#C2EEE8" stroke="#178F95" stroke-width="3"/><circle cx="85" cy="74" r="8" fill="#C2EEE8" stroke="#178F95" stroke-width="3"/><path d="M52 16h31M68 16v20" stroke="#76CDC7" stroke-width="3" stroke-dasharray="4 5"/></svg></div>
+  <h3>상하수도 관로 잔존수명 예측</h3>
+  <p>관로의 노후화·손상 상태와 위험요인을 분석하여 잔존수명을 추정하고, 개량 및 교체 의사결정을 지원합니다.</p>
+</article>
+<article class="research-card">
+  <div class="card-num">연구분야 / 02 · ASSET MANAGEMENT</div>
+  <div class="research-icon"><svg aria-hidden="true" fill="none" viewBox="0 0 100 100"><rect x="17" y="19" width="65" height="64" rx="7" fill="#E0F6F3" stroke="#228F94" stroke-width="3"/><path d="M30 39h20M30 50h18M30 62h28" stroke="#2BA89E" stroke-width="4" stroke-linecap="round"/><circle cx="71" cy="34" r="13" fill="#90DDD4" stroke="#178F95" stroke-width="2"/><path d="M66 34l4 4 7-9" stroke="#0E6C71" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <h3>상하수도 인프라 자산관리</h3>
+  <p>시설 상태·위험도·서비스 수준과 생애주기비용을 고려해 유지보수 전략과 투자·갱신 우선순위를 평가합니다.</p>
+</article>
+<article class="research-card">
+  <div class="card-num">연구분야 / 03 · AI & DATA</div>
+  <div class="research-icon"><svg aria-hidden="true" fill="none" viewBox="0 0 100 100"><path d="M20 30l28-13 29 21-26 33-32-12 29-42 3 54 26-33-57-8" stroke="#56C3BA" stroke-width="2.5"/><g fill="#B6EDE6" stroke="#178F95" stroke-width="3"><circle cx="20" cy="30" r="7"/><circle cx="48" cy="17" r="7"/><circle cx="77" cy="38" r="7"/><circle cx="51" cy="71" r="7"/><circle cx="19" cy="59" r="7"/></g></svg></div>
+  <h3>AI 기반 예측 및 스마트 운영</h3>
+  <p>수질·공정 운영자료와 시설 점검 데이터를 활용해 수질 및 결함을 예측하고, 데이터 기반 운영 의사결정을 지원합니다.</p>
+</article>
+<article class="research-card">
+  <div class="card-num">연구분야 / 04 · WATER TREATMENT</div>
+  <div class="research-icon"><svg aria-hidden="true" fill="none" viewBox="0 0 100 100"><path d="M22 20v51c0 9 9 15 28 15s28-6 28-15V20" stroke="#278F94" stroke-width="3"/><path d="M22 48c9 8 19-4 28 3s18-6 28 2" stroke="#38AEA7" stroke-width="4"/><path d="M35 22v-8M49 19v-9M64 22v-8" stroke="#8FDCD5" stroke-width="4" stroke-linecap="round"/><circle cx="40" cy="66" r="4" fill="#8DDDD5"/><circle cx="61" cy="70" r="4" fill="#8DDDD5"/></svg></div>
+  <h3>상하수도 처리공정 최적화</h3>
+  <p>고도정수처리, 오존·AOP, 분리막 및 물 재이용 기술과 정수·하수처리시설 운영 최적화를 연구합니다.</p>
+</article>
 </div>
 <div class="official-field-strip"><strong>학교 등록 연구분야</strong><p>오존/AOP 및 UV 연구 · 수처리 시스템 최적화·자동화 · 하수재이용 · 해수담수화 · 상수고도처리</p></div><p class="source-note">연구분야 출처: <a href="https://portal.dankook.ac.kr/ctt/dku/profinfo/detailSearch?uld=1AD1F2B7F763834BA87F87C43D5E562E" rel="noopener noreferrer" target="_blank">단국대학교 교원정보 ↗</a></p>
 </div>
@@ -163,10 +192,10 @@ body{font-family:var(--font-ko);word-break:keep-all;overflow-wrap:break-word;let
 <h2 class="section-title">김두일 교수</h2>
 <div class="prof-top">
 <div class="prof-identity">
-<div class="prof-card-head"><div aria-label="김두일 교수 사진(단국대학교 교원정보 제공)" class="avatar prof-avatar"><span>DK</span><img alt="김두일 교수" loading="eager" onerror="this.style.display='none'" referrerpolicy="no-referrer" src="https://webinfo.dankook.ac.kr/comm/syst/file/download.do?fileCdval=201501010000000000000000000&amp;fileSeq=105305"/></div><div><div class="person-role">교수 · 김두일</div><div class="person-name">김두일</div><p class="person-desc">단국대학교 공과대학 인프라건설공학과</p></div></div>
-<div class="prof-quicklinks"><a href="mailto:dikim21@dankook.ac.kr">dikim21@dankook.ac.kr ↗</a><span>+82-31-8005-3610</span><span>제1공학관 216호</span></div><div class="prof-signature"><span>주요 연구분야</span><strong>수처리 · 상수도 시스템 · 운영 최적화</strong></div>
+<div class="prof-card-head"><div aria-label="김두일 교수 사진(단국대학교 공식 뉴스 제공)" class="avatar prof-avatar"><span>DK</span><img alt="김두일 교수" loading="eager" onerror="this.style.display='none'" referrerpolicy="no-referrer" src="https://cms.dankook.ac.kr/documents/portlet_file_entry/20118/%EA%B9%80%EB%91%90%EC%9D%BC%2B%EA%B5%90%EC%88%98%28%ED%86%A0%EB%AA%A9%ED%99%98%EA%B2%BD%EA%B3%B5%ED%95%99%EA%B3%BC_%29.png/2ca961ce-cce9-f3e1-2891-af18df745fe4"/></div><div><div class="person-role">교수 · 김두일</div><div class="person-name">김두일</div><p class="person-desc">단국대학교 공과대학 인프라건설공학과</p></div></div>
+<div class="prof-quicklinks"><a href="mailto:dikim21@dankook.ac.kr">dikim21@dankook.ac.kr ↗</a><span>+82-31-8005-3610</span><span>제1공학관 216호</span></div><div class="prof-signature"><span>연구 키워드</span><strong>상하수도 관로 · 잔존수명 · 자산관리 · AI 예측 · 공정 최적화</strong></div>
 </div>
-<div class="prof-bio"><span class="prof-eyebrow">교수 소개</span><h3>현장 경험과 공학적 분석을 연결하는 물환경 연구</h3>
+<div class="prof-bio"><span class="prof-eyebrow">교수 소개</span><h3>상하수도 시설의 성능과 수명, 운영을 연결하는 공학 연구</h3>
 
 
 <p>김두일 교수는 서울대학교 토목공학과에서 학사·석사학위를 취득하고, 미국 조지아 공과대학교(Georgia Institute of Technology)에서 환경공학 분야 박사학위를 받았습니다.</p><p>단국대학교 부임 전 포스코건설, 한국과학기술연구원(KIST), 삼성건설에서 약 10년간 물산업 및 환경공학 연구·실무를 수행했습니다. 당시 해수담수화와 하수재이용, 고도정수처리, 분리막·자외선 처리, 고도하수처리 분야를 경험했습니다.</p><p>주요 연구 관심사는 분리막 기반 수처리, 오존·고도산화공정(AOP), 상수관망 관리, 상하수도 처리시설의 운영 최적화입니다. 오존접촉조 해석·설계 및 잔류오존·브롬산 생성 등을 예측하는 장치와 모델 개발도 수행했습니다.</p><a class="official-link" href="https://portal.dankook.ac.kr/ctt/dku/profinfo/detailSearch?uld=1AD1F2B7F763834BA87F87C43D5E562E" rel="noopener noreferrer" target="_blank">공식 교수소개 원문 및 연구분야 확인 ↗</a>
@@ -180,29 +209,17 @@ body{font-family:var(--font-ko);word-break:keep-all;overflow-wrap:break-word;let
 
 </div>
 </section>
-<section class="section members" id="members">
-<div class="container">
-<div class="members-heading">
-<div><div class="section-meta">연구실 구성원</div><h2 class="section-title">함께 연구하는 사람들</h2><p class="section-lead">구성원 성명과 사진은 확인 후 등록합니다. 각 카드는 사진, 소속 과정, 연구분야를 표시할 수 있도록 제작했습니다.</p></div>
-<span class="member-update-label">프로필 등록 준비 중</span>
-</div>
-<div class="member-grid">
-<article class="member-card" data-slot="01"><div class="member-photo-area"><div aria-hidden="true" class="member-photo-fallback"><svg fill="none" height="70" viewbox="0 0 90 90" width="70"><circle cx="45" cy="33" r="16" stroke="currentColor" stroke-width="2"></circle><path d="M13 82c2-19 14-30 32-30s30 11 32 30" stroke="currentColor" stroke-width="2"></path></svg><small>사진 등록 예정</small></div><img alt="연구원 1 사진" loading="lazy" onerror="this.style.display='none'" src="images/member-01.jpg"/></div><div class="member-info"><span>연구원 프로필 01</span><h3>이름 등록 예정</h3><p>학위과정 · 연구분야 등록 예정</p></div></article>
-<article class="member-card" data-slot="02"><div class="member-photo-area"><div aria-hidden="true" class="member-photo-fallback"><svg fill="none" height="70" viewbox="0 0 90 90" width="70"><circle cx="45" cy="33" r="16" stroke="currentColor" stroke-width="2"></circle><path d="M13 82c2-19 14-30 32-30s30 11 32 30" stroke="currentColor" stroke-width="2"></path></svg><small>사진 등록 예정</small></div><img alt="연구원 2 사진" loading="lazy" onerror="this.style.display='none'" src="images/member-02.jpg"/></div><div class="member-info"><span>연구원 프로필 02</span><h3>이름 등록 예정</h3><p>학위과정 · 연구분야 등록 예정</p></div></article>
-<article class="member-card" data-slot="03"><div class="member-photo-area"><div aria-hidden="true" class="member-photo-fallback"><svg fill="none" height="70" viewbox="0 0 90 90" width="70"><circle cx="45" cy="33" r="16" stroke="currentColor" stroke-width="2"></circle><path d="M13 82c2-19 14-30 32-30s30 11 32 30" stroke="currentColor" stroke-width="2"></path></svg><small>사진 등록 예정</small></div><img alt="연구원 3 사진" loading="lazy" onerror="this.style.display='none'" src="images/member-03.jpg"/></div><div class="member-info"><span>연구원 프로필 03</span><h3>이름 등록 예정</h3><p>학위과정 · 연구분야 등록 예정</p></div></article>
-</div>
-<p class="members-note">※ 실제 연구실 구성원의 정보를 입력하기 전까지 임시 등록 카드로 표시됩니다. 인원 수에 맞춰 카드를 추가하거나 삭제할 수 있습니다.</p>
-</div>
-</section><section class="section publications" id="publications">
+<section class="section publications" id="publications">
 <div class="container pub-layout">
-<div><div class="section-meta">연구실적</div><h2 class="section-title">주요 연구실적</h2><p class="section-lead">단국대학교 공식 교원정보에 등록된 주요 논문 일부를 소개합니다. 전체 연구실적 목록은 아닙니다.</p><a class="official-link" href="https://portal.dankook.ac.kr/ctt/dku/profinfo/detailSearch?uld=1AD1F2B7F763834BA87F87C43D5E562E" rel="noopener noreferrer" target="_blank">전체 교수 연구실적 확인 ↗</a></div>
+<div><div class="section-meta">연구실적</div><h2 class="section-title">주요 연구실적</h2><p class="section-lead">단국대학교 교원정보에 등록된 논문 중 상하수도 관로, 자산관리, AI 및 수처리 관련 주요 성과를 발췌했습니다.</p><a class="official-link" href="https://portal.dankook.ac.kr/ctt/dku/profinfo/detailSearch?uld=1AD1F2B7F763834BA87F87C43D5E562E" rel="noopener noreferrer" target="_blank">전체 교수 연구실적 확인 ↗</a></div>
 <div class="pub-placeholder">
-<div class="pub-row"><div class="pub-year">2025</div><div><div class="pub-title">Impact of Data Quality on CNN-Based Sewer Defect Detection</div><div class="pub-desc">단국대학교 교원정보에 등록된 주요 논문</div></div></div>
-<div class="pub-row"><div class="pub-year">2025</div><div><div class="pub-title">Development of a real-time THMs prediction technology based on artificial intelligence and sensors</div><div class="pub-desc">단국대학교 교원정보에 등록된 주요 논문</div></div></div>
-<div class="pub-row"><div class="pub-year">2025</div><div><div class="pub-title">The effect of temperature, ion valency, and solvent reuse on the solvent extraction desalination</div><div class="pub-desc">단국대학교 교원정보에 등록된 주요 논문</div><a class="pub-action" href="https://doi.org/10.12989/mwt.2025.16.2.095" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></div>
-<div class="pub-row"><div class="pub-year">2023</div><div><div class="pub-title">Role of Nanoscale Morphology on the Efficiency of Solvent-Based Desalination Method</div><div class="pub-desc">단국대학교 교원정보에 등록된 주요 논문</div><a class="pub-action" href="https://doi.org/10.1021/acsestwater.2c00473" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></div>
-<div class="pub-row"><div class="pub-year">2022</div><div><div class="pub-title">하수관거 통수능 해석을 위한 Huff 모형과 ABM 법의 적용성 분석</div><div class="pub-desc">단국대학교 교원정보에 등록된 주요 논문</div></div></div>
-<div class="pub-row"><div class="pub-year">2021</div><div><div class="pub-title">Prioritizing water distribution pipe renewal based on seismic risk and construction cost</div><div class="pub-desc">단국대학교 교원정보에 등록된 주요 논문</div></div></div>
+<div class="pub-row"><div class="pub-year">2025</div><div><div class="pub-title">Impact of Data Quality on CNN-Based Sewer Defect Detection</div><div class="pub-desc">AI 기반 하수관 결함 탐지</div></div></div>
+<div class="pub-row"><div class="pub-year">2025</div><div><div class="pub-title">Development of a real-time THMs prediction technology based on artificial intelligence and sensors</div><div class="pub-desc">AI 기반 수질 예측</div></div></div>
+<div class="pub-row"><div class="pub-year">2025</div><div><div class="pub-title">자산관리에서 LoS의 역할과 성공전략</div><div class="pub-desc">상하수도 자산관리와 서비스 수준</div></div></div>
+<div class="pub-row"><div class="pub-year">2021</div><div><div class="pub-title">Prioritizing water distribution pipe renewal based on seismic risk and construction cost</div><div class="pub-desc">위험도 기반 상수관로 개량 우선순위</div></div></div>
+<div class="pub-row"><div class="pub-year">2020</div><div><div class="pub-title">Diagnosis and renewal decision making of water mains using 3D scanning data</div><div class="pub-desc">상수관로 진단 및 갱신 의사결정</div></div></div>
+<div class="pub-row"><div class="pub-year">2019</div><div><div class="pub-title">Developing residual life estimation method for DCIP/CIP pipes</div><div class="pub-desc">관로 잔존수명 추정</div></div></div>
+<div class="pub-row"><div class="pub-year">2017</div><div><div class="pub-title">Increasing operational efficiency of a membrane water treatment plant using an asset management method</div><div class="pub-desc">자산관리 기반 처리시설 운영 개선</div></div></div>
 </div>
 </div>
 </section>
