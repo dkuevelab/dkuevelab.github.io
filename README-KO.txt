@@ -1,13 +1,19 @@
-EVE LAB | 상하수도공학 연구실 웹사이트 업데이트
+EVE LAB 홈페이지 - 구성원 4명 반영본
 
-변경: 홈페이지 이름, 첫 화면 메시지, 관로 잔존수명·자산관리·AI 핵심 분야, 연구분야 카드, 관련 연구실적 정렬.
-교수님 학력·경력·연락처 등 기존 검증된 정보 유지. 학생 구성원 영역 없음.
+배치 순서(왼쪽→오른쪽)
+1. 김유래 - 석사과정 - member-kim-yurae.jpg
+2. 김지원 - 석사과정 - member-kim-jiwon.jpg
+3. 황민철 - 석사과정 - member-hwang-mincheol.jpg
+4. 박기수 - 학부연구생 - member-park-gisu.jpg
 
 GitHub 적용 방법
-1. index.html을 GitHub dkuevelab/dkuevelab.github.io 저장소 최상위 폴더에 업로드하여 같은 이름의 기존 파일 교체.
-2. Commit changes. 기존 favicon.svg는 유지 가능.
-3. GitHub Actions에서 Pages 배포 완료 후 https://dkuevelab.github.io 확인.
+1. https://github.com/dkuevelab/dkuevelab.github.io 접속
+2. + (Add file) → Upload files 클릭
+3. index.html과 member-*.jpg 4개 파일 업로드
+4. Commit changes 클릭
+5. GitHub Pages 배포 완료 후 https://dkuevelab.github.io/#members 에서 확인
 
-참고: 교수님 정보와 논문 목록은 단국대학교 공식 교수소개 자료 기반입니다.
-단국대 교원정보에는 연구실명이 '환경공학 연구실'로 표기되어 있으나, 이 홈페이지는 사용자 요청에 따라 '상하수도공학 연구실'로 표기했습니다.
-공식 교수 프로필 사진은 기존 버전과 동일하게 학교 외부 이미지 URL로 불러옵니다.
+og-evelab.png는 기존 홈페이지의 공유 이미지와 동일합니다. 이미 업로드했다면 다시 올리지 않아도 됩니다.
+기존 favicon.svg와 README.md는 삭제하지 마세요.
+
+주의: 홈페이지가 공개되므로 프로필 사진·이름 공개에 대한 동의를 받은 후 게시하세요.

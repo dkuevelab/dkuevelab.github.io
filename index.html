@@ -6,6 +6,24 @@
 <meta content="단국대학교 EVE LAB 상하수도공학 연구실. 상하수도 관로 잔존수명 예측, 인프라 자산관리, AI 기반 수질·운영 예측 및 고도수처리 연구를 소개합니다." name="description"/>
 <meta content="#071d29" name="theme-color"/>
 <title>EVE LAB | 단국대학교 상하수도공학 연구실</title>
+<!-- Link preview for KakaoTalk, Slack, and social networks -->
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:site_name" content="EVE LAB" />
+<meta property="og:title" content="EVE LAB | 단국대학교 상하수도공학 연구실" />
+<meta property="og:description" content="상하수도 관로 잔존수명 예측 · 자산관리 · AI 기반 운영 최적화를 연구합니다." />
+<meta property="og:url" content="https://dkuevelab.github.io/" />
+<meta property="og:image" content="https://dkuevelab.github.io/og-evelab.png" />
+<meta property="og:image:secure_url" content="https://dkuevelab.github.io/og-evelab.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="EVE LAB 단국대학교 상하수도공학 연구실 대표 이미지" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="EVE LAB | 단국대학교 상하수도공학 연구실" />
+<meta name="twitter:description" content="관로 잔존수명 예측 · 자산관리 · AI 기반 운영 최적화" />
+<meta name="twitter:image" content="https://dkuevelab.github.io/og-evelab.png" />
+
 <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -78,6 +96,27 @@ body{font-family:var(--font-ko);word-break:keep-all;overflow-wrap:break-word;let
 @media(max-width:1100px){.hero h1{font-size:clamp(32px,4.1vw,47px)}}
 @media(max-width:760px){.hero h1{font-size:clamp(32px,6.8vw,48px)}.hero-copy{padding-top:53px}.art-label{max-width:190px}}
 @media(max-width:440px){.hero h1{font-size:clamp(29px,7.7vw,36px)}.hero-desc{font-size:13px}.brand-caption{font-size:7px}}
+
+
+/* Members section */
+.members{background:#fbfcfc}
+.members-head{display:flex;justify-content:space-between;align-items:end;gap:22px;margin-bottom:34px}
+.members-lead{max-width:560px;color:#657f87;font-size:14px;line-height:1.9}
+.members-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.member-card{background:#fff;border:1px solid #e3eded;border-radius:5px;overflow:hidden;display:flex;flex-direction:column;min-height:100%;box-shadow:0 8px 25px rgba(7,29,41,.04)}
+.member-photo{aspect-ratio:4/5;background:linear-gradient(145deg,#d7e7ea,#f3f7f7);position:relative;overflow:hidden}
+.member-photo img{width:100%;height:100%;object-fit:cover;object-position:center 18%;display:block}
+.member-info{padding:20px 18px 22px}
+.member-role{display:inline-block;font-size:10px;letter-spacing:.08em;font-weight:800;color:#15998f;background:#ebf7f5;border-radius:999px;padding:7px 10px}
+.member-name{font-family:var(--font-ko);font-size:21px;letter-spacing:-.04em;font-weight:800;color:#17323d;margin:14px 0 8px}
+.member-status{font-size:13px;color:#58727a;line-height:1.7;margin:0}
+.member-empty .member-photo{display:grid;place-items:center;background:linear-gradient(145deg,#eff5f5,#f8fbfb);border-bottom:1px dashed #d6e4e6}
+.empty-badge{width:86px;height:86px;border-radius:50%;border:1.5px dashed #9bc8c7;color:#4d8b8a;display:grid;place-items:center;font-size:34px;font-weight:300}
+.member-empty .member-name{color:#40606b}
+.member-empty .member-status{color:#83979d}
+@media(max-width:1100px){.members-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.members-head{flex-direction:column;align-items:start}.members-grid{grid-template-columns:1fr}.member-info{padding:18px 16px 20px}.member-name{font-size:20px}}
+
 </style>
 <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" rel="stylesheet"/></head>
 <body>
@@ -87,7 +126,7 @@ body{font-family:var(--font-ko);word-break:keep-all;overflow-wrap:break-word;let
 <span class="brand-mark"><svg aria-hidden="true" fill="none" viewbox="0 0 40 40"><path d="M7 25C13 17 17 27 23 19C28 13 30 17 34 11" stroke="#85E6D6" stroke-linecap="round" stroke-width="3"></path><path d="M7 32C13 24 17 34 23 26C28 20 30 24 34 18" stroke="#85E6D6" stroke-linecap="round" stroke-width="3"></path></svg></span>
 <span><span class="brand-label">EVE LAB</span><span class="brand-caption">WATER &amp; WASTEWATER ENGINEERING · DKU</span></span>
 </a>
-<nav aria-label="주요 메뉴" class="nav" id="site-nav"><a href="#about">연구실 소개</a><a href="#research">연구분야</a><a href="#people">지도교수</a><a href="#publications">연구실적</a><a href="#contact">연락처</a></nav>
+<nav aria-label="주요 메뉴" class="nav" id="site-nav"><a href="#about">연구실 소개</a><a href="#research">연구분야</a><a href="#people">지도교수</a><a href="#members">구성원</a><a href="#publications">연구실적</a><a href="#contact">연락처</a></nav>
 <a class="header-contact" href="#contact">문의하기 <span aria-hidden="true">↗</span></a>
 <button aria-controls="site-nav" aria-expanded="false" aria-label="메뉴 열기" class="menu-toggle"><svg fill="none" height="26" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="26"><path d="M3 7h18M3 12h18M3 17h18"></path></svg></button>
 </div>
@@ -209,6 +248,53 @@ body{font-family:var(--font-ko);word-break:keep-all;overflow-wrap:break-word;let
 
 </div>
 </section>
+
+<section class="section members" id="members">
+<div class="container">
+  <div class="members-head">
+    <div>
+      <div class="section-meta">구성원</div>
+      <h2 class="section-title">EVE LAB 연구실 구성원</h2>
+    </div>
+    <p class="members-lead">상하수도 인프라, 자산관리 및 AI 기반 기술을 연구하는 EVE LAB 구성원들을 소개합니다.</p>
+  </div>
+  <div class="members-grid">
+    <article class="member-card">
+      <div class="member-photo"><img src="member-kim-yurae.jpg" loading="lazy" alt="김유래 석사과정 사진"/></div>
+      <div class="member-info">
+        <span class="member-role">MEMBER</span>
+        <h3 class="member-name">김유래</h3>
+        <p class="member-status">석사과정</p>
+      </div>
+    </article>
+    <article class="member-card">
+      <div class="member-photo"><img src="member-kim-jiwon.jpg" loading="lazy" alt="김지원 석사과정 사진"/></div>
+      <div class="member-info">
+        <span class="member-role">MEMBER</span>
+        <h3 class="member-name">김지원</h3>
+        <p class="member-status">석사과정</p>
+      </div>
+    </article>
+    <article class="member-card">
+      <div class="member-photo"><img src="member-hwang-mincheol.jpg" alt="황민철 석사과정 사진" loading="lazy"/></div>
+      <div class="member-info">
+        <span class="member-role">MEMBER</span>
+        <h3 class="member-name">황민철</h3>
+        <p class="member-status">석사과정</p>
+      </div>
+    </article>
+    <article class="member-card">
+      <div class="member-photo"><img src="member-park-gisu.jpg" loading="lazy" alt="박기수 학부연구생 사진"/></div>
+      <div class="member-info">
+        <span class="member-role">MEMBER</span>
+        <h3 class="member-name">박기수</h3>
+        <p class="member-status">학부연구생</p>
+      </div>
+    </article>
+  </div>
+</div>
+</section>
+
 <section class="section publications" id="publications">
 <div class="container pub-layout">
 <div><div class="section-meta">연구실적</div><h2 class="section-title">주요 연구실적</h2><p class="section-lead">단국대학교 교원정보에 등록된 논문 중 상하수도 관로, 자산관리, AI 및 수처리 관련 주요 성과를 발췌했습니다.</p><a class="official-link" href="https://portal.dankook.ac.kr/ctt/dku/profinfo/detailSearch?uld=1AD1F2B7F763834BA87F87C43D5E562E" rel="noopener noreferrer" target="_blank">전체 교수 연구실적 확인 ↗</a></div>
