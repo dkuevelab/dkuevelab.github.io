@@ -241,6 +241,24 @@ svg text{font-size:20px!important;letter-spacing:0!important}
   .timeline>div{flex-direction:column;gap:8px}
 }
 
+
+/* Photo-free additional members, following the four existing photo cards. */
+.extra-members {margin-top:52px;border-top:2px solid #dce9e8;padding-top:32px}
+.extra-members-title {font-family:var(--font-ko);font-weight:800;font-size:27px;letter-spacing:-.04em;color:#173741;margin:0 0 23px}
+.member-list {list-style:none;margin:0;padding:0;border:1px solid #dce9e8;border-radius:6px;background:#fff;overflow:hidden}
+.member-list-row {display:grid;grid-template-columns:1fr 1fr 1.8fr;align-items:center;gap:30px;min-height:78px;padding:19px 28px;border-bottom:1px solid #e5eeee}
+.member-list-row:last-child {border-bottom:0}
+.member-list-name,.member-list-degree,.member-list-org {font-size:20px;line-height:1.5;letter-spacing:-.02em}
+.member-list-name {font-weight:800;color:#173741}
+.member-list-degree {font-weight:600;color:#4e6c75}
+.member-list-org {color:#5a7680;text-align:right;overflow-wrap:anywhere}
+@media(max-width:760px){
+  .extra-members{margin-top:40px;padding-top:27px}
+  .member-list-row{grid-template-columns:1fr 1fr;gap:6px 14px;padding:19px 22px}
+  .member-list-org{grid-column:1 / -1;text-align:left}
+  .member-list-org:empty{display:none}
+}
+
 </style>
 <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" rel="stylesheet"/></head>
 <body>
@@ -415,6 +433,42 @@ svg text{font-size:20px!important;letter-spacing:0!important}
         <p class="member-status">학부연구생</p>
       </div>
     </article>
+  </div>
+
+  <div class="extra-members">
+    <h3 class="extra-members-title">추가 구성원</h3>
+    <ul class="member-list" aria-label="추가 연구실 구성원">
+      <li class="member-list-row">
+        <strong class="member-list-name">박변주</strong>
+        <span class="member-list-degree">박사과정</span>
+        <span class="member-list-org">이피에스이앤이</span>
+      </li>
+      <li class="member-list-row">
+        <strong class="member-list-name">오성환</strong>
+        <span class="member-list-degree">박사과정</span>
+        <span class="member-list-org">도화엔지니어링</span>
+      </li>
+      <li class="member-list-row">
+        <strong class="member-list-name">이경환</strong>
+        <span class="member-list-degree">박사과정</span>
+        <span class="member-list-org">수자원공사</span>
+      </li>
+      <li class="member-list-row">
+        <strong class="member-list-name">송현근</strong>
+        <span class="member-list-degree">박사과정</span>
+        <span class="member-list-org">삼송하이드로</span>
+      </li>
+      <li class="member-list-row">
+        <strong class="member-list-name">이건희</strong>
+        <span class="member-list-degree">박사과정</span>
+        <span class="member-list-org" aria-hidden="true"></span>
+      </li>
+      <li class="member-list-row">
+        <strong class="member-list-name">이재범</strong>
+        <span class="member-list-degree">석사과정</span>
+        <span class="member-list-org">수자원공사</span>
+      </li>
+    </ul>
   </div>
 </div>
 </section>
